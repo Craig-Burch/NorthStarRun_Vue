@@ -1,12 +1,20 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 import Index from './pages/Index.vue';
-import Landing from './pages/Landing.vue';
-import Portfolio from './pages/Portfolio.vue';
+import OurFarm from './pages/OurFarm.vue';
+import Gallery from './pages/Gallery.vue';
 import Login from './pages/Login.vue';
-import Profile from './pages/Profile.vue';
+import OurServices from './pages/OurServices.vue';
 import MainNavbar from './layout/MainNavbar.vue';
 import MainFooter from './layout/MainFooter.vue';
+
+// Home y
+// About Our Farm y
+// About Us / About Our Team  (might be integerated with "Our Farm")
+// Our Services y
+// Gallery y
+// QandA 
+// Contact Us (maybe use login page)
 
 Vue.use(Router);
 
@@ -24,18 +32,18 @@ export default new Router({
       }
     },
     {
-      path: '/landing',
-      name: 'landing',
-      components: { default: Landing, header: MainNavbar, footer: MainFooter },
+      path: '/Our-Farm',
+      name: 'ourFarm',
+      components: { default: OurFarm, header: MainNavbar, footer: MainFooter },
       props: {
         header: { colorOnScroll: 400 },
         footer: { backgroundColor: 'black' }
       }
     },
     {
-      path: '/portfolio',
-      name: 'landing',
-      components: { default: Portfolio, header: MainNavbar, footer: MainFooter },
+      path: '/Gallery',
+      name: 'gallery',
+      components: { default: Gallery, header: MainNavbar, footer: MainFooter },
       props: {
         header: { colorOnScroll: 400 },
         footer: { backgroundColor: 'black' }
@@ -50,9 +58,9 @@ export default new Router({
       }
     },
     {
-      path: '/profile',
-      name: 'profile',
-      components: { default: Profile, header: MainNavbar, footer: MainFooter },
+      path: '/Our-Services',
+      name: 'ourServices',
+      components: { default: OurServices, header: MainNavbar, footer: MainFooter },
       props: {
         header: { colorOnScroll: 400 },
         footer: { backgroundColor: 'black' }

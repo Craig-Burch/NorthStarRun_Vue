@@ -63,17 +63,17 @@
               icon="now-ui-icons design_image"
               class="nav-item"
       >
-        <nav-link to="/portfolio">
-          <i class="now-ui-icons education_paper"></i> Portfolio
+        <nav-link to="/Gallery">
+          <i class="now-ui-icons education_paper"></i> Gallery
         </nav-link>
-        <nav-link to="/landing">
-          <i class="now-ui-icons education_paper"></i> Landing
+        <nav-link to="/Our-Farm">
+          <i class="now-ui-icons education_paper"></i> About Our Farm
         </nav-link>
         <nav-link to="/login">
           <i class="now-ui-icons users_circle-08"></i> Login
         </nav-link>
-        <nav-link to="/profile">
-          <i class="now-ui-icons users_single-02"></i> Profile
+        <nav-link to="/Our-Services">
+          <i class="now-ui-icons users_single-02"></i> Our Services
         </nav-link>
       </drop-down>
       <li class="nav-item">
