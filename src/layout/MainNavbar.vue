@@ -8,7 +8,11 @@
   >
     <template slot-scope="{ toggle, isToggled }">
       <router-link v-popover:popover1 class="navbar-brand" to="/">
-        Now Ui Kit
+        <img
+              v-lazy="'img/logo/favicon.png'"
+              alt="North Star Run"
+              class=""
+            />
       </router-link>
       <el-popover
         ref="popover1"
@@ -87,7 +91,7 @@
         </a>
       </li>
 
-      <li class="nav-item">
+      <!-- <li class="nav-item">
         <a
           class="nav-link"
           rel="tooltip"
@@ -99,7 +103,7 @@
           <i class="fab fa-twitter"></i>
           <p class="d-lg-none d-xl-none">Twitter</p>
         </a>
-      </li>
+      </li> -->
       <li class="nav-item">
         <a
           class="nav-link"

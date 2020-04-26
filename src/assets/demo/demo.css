@@ -1,5 +1,6 @@
 /*STYLE GUIDE
 
+0.1 global css
 1.0 home page hero
 2.0 gradient BG and what we do section
 3.0 contact modals
@@ -19,14 +20,20 @@
 /*navbar*/
 .navbar.navbar-transparent  {
   background-color: #0B0B47 !important;
+
 }
+
+/*0.1 global css*/
+
+
 /*1.0 home page hero*/
 .heroBackgroundImage {
+  float: left;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 900px;
-  width: 1920px !important;
+  
+  width: 100% !important;
   vertical-align: middle; 
   display: table-cell;
   background-image: url('https://images.pexels.com/photos/956999/milky-way-starry-sky-night-sky-star-956999.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');

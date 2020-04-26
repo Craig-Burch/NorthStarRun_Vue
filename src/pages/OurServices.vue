@@ -225,18 +225,5 @@ export default {
 };
 </script>
 <style>
-  img:hover {
-    transform:scale(1.3);
-    -ms-transform:scale(1.3); /* IE 9 */
-    -moz-transform:scale(1.3); /* Firefox */
-    -webkit-transform:scale(1.3); /* Safari and Chrome */
-    -o-transform:scale(1.3); /* Opera */
-  
-    transition: all 0.5s ease-in-out !important; 
 
-}
-img {
-  transition: all 0.5s ease-out;
-}
-  
 </style>

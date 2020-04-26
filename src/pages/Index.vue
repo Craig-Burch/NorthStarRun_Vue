@@ -5,44 +5,46 @@
         
           <div class="col-lg-12 text-center ">
            <img
-              v-lazy="'img/favicon.png'"
-              alt="Hero Logo"
-              class="mg-raised"
+              v-lazy="'img/logo/logoScaled.png'"
+              alt="North Star Run"
+              class=""
             />
           </div>
          
         </div>
-        <!-- scroll -->
-        <div class="centerScroll">
+        <!-- scroll - not in use for now, most likely wont be used here-->
+        <!-- <div class="centerScroll">
         <a href="#" v-scroll-to="'#scrollDown'" >
            <div class="arrow-down">
              
            </div>
          </a>
-       </div>
+       </div> -->
     </div>
 
 
    <div class="whatWeDoContainer" id="scrollDown">
     <div class="container">  
       <div class="row d-flex justify-content-center text-left ">
-        <div class=" col-lg-6 mt-5">
+        <!-- <div class=" col-lg-6 mt-5">
           <img class="s-logo" src="https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="logo" width="400" height="400" />
-        </div>
-        <div class=" col-lg-6 mt-5">
+        </div> -->
+        <div class=" col-lg-12 mt-5">
           <h5>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+           In 2017, I retired my Thoroughbred, Ki, to a retirement farm in Kentucky.  I anguished over that decision.  I knew it was the right decision, when I saw him gallop across the pasture and play in the pond with his herd mates.  To see Ki just “being a horse” in a peaceful, natural herd environment makes me so happy and I know it’s what he deserves.  Let North Star Run welcome your horse to retirement. 
+
+Ki isn’t really that old, but he has health issues that make him un-rideable. He did an amazing job taking care of me over the years.  I wanted to give back to him in the most loving way. Whether it be old age, injury or just a reprieve from high boarding costs, consider NSR a selfless answer to a lease on a new life.
           </h5>
         </div>
       </div>
 
       <div class="row d-flex justify-content-center text-left">
-        <div class=" col-lg-6">
+        <!-- <div class=" col-lg-6">
           <h5>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </h5>
-        </div>
-         <div class=" col-lg-6">
+        </div> -->
+         <div class=" col-lg-12" style="border: 1px solid black">
           <img class="s-logo" src="https://images.pexels.com/photos/820673/pexels-photo-820673.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="logo" width="500" height="400"/>
         </div>
       </div>
