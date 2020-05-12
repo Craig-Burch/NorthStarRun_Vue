@@ -18,8 +18,9 @@
 }*/
 
 /*navbar*/
+/*use if you need to remove initial tranparency*/
 .navbar.navbar-transparent  {
-  background-color: #0B0B47 !important;
+ /* background-color: #0B0B47 !important;*/
 
 }
 
@@ -32,7 +33,6 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  
   width: 100% !important;
   vertical-align: middle; 
   display: table-cell;

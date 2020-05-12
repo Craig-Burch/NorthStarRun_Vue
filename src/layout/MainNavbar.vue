@@ -9,9 +9,9 @@
     <template slot-scope="{ toggle, isToggled }">
       <router-link v-popover:popover1 class="navbar-brand" to="/">
         <img
-              v-lazy="'img/logo/favicon.png'"
+              v-lazy="'img/navBarLogoScaled.png'"
               alt="North Star Run"
-              class=""
+              height="100px"
             />
       </router-link>
       <el-popover
@@ -87,7 +87,7 @@
           target="_blank"
         >
           <i class="now-ui-icons arrows-1_share-66"></i>
-          <p>Upgrade to PRO</p>
+          <p>Request A Quote</p>
         </a>
       </li>
 
