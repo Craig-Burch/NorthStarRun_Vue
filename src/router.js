@@ -18,6 +18,8 @@ import MainFooter from './layout/MainFooter.vue';
 
 Vue.use(Router);
 
+
+
 export default new Router({
   mode:'history',
   linkExactActiveClass: 'active',
@@ -73,5 +75,6 @@ export default new Router({
     } else {
       return { x: 0, y: 0 };
     }
-  }
+  },
+  
 });

@@ -11,7 +11,7 @@
         <img
               v-lazy="'img/navBarLogoScaled.png'"
               alt="North Star Run"
-              height="100px"
+              height="97px"
             />
       </router-link>
       <el-popover
@@ -27,7 +27,8 @@
       </el-popover>
     </template>
     <template slot="navbar-menu">
-      <li class="nav-item">
+
+      <!-- <li class="nav-item">
         <a
           class="nav-link"
           href="https://www.creative-tim.com/product/vue-now-ui-kit"
@@ -36,8 +37,36 @@
           <i class="now-ui-icons arrows-1_cloud-download-93"></i>
           <p>Download</p>
         </a>
+      </li> -->
+
+      <li class="nav-item">
+        <a class="nav-link">
+          <router-link to="/Gallery">
+            <i class="now-ui-icons arrows-1_cloud-download-93"></i>
+            <p style="color: white;">gallery</p>
+          </router-link>
+        </a>
       </li>
-      <drop-down
+
+      <li class="nav-item">
+        <a class="nav-link">
+          <router-link to="/Our-Services">
+            <i class="now-ui-icons users_single-02"></i> 
+            <p style="color: white;">Our Services</p>
+          </router-link>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link">
+          <router-link to="/login">
+            <i class="now-ui-icons users_circle-08"></i> 
+            <p style="color: white;">FAQ</p>
+          </router-link>
+        </a>
+      </li>
+
+      <!-- <drop-down
         tag="li"
         title="Portfolio"
         icon="now-ui-icons design_app"
@@ -60,8 +89,8 @@
         >
           <i class="now-ui-icons design_bullet-list-67"></i> Graphic 
         </a>
-      </drop-down>
-      <drop-down
+      </drop-down> -->
+      <!-- <drop-down
               tag="li"
               title="Explore"
               icon="now-ui-icons design_image"
@@ -79,15 +108,15 @@
         <nav-link to="/Our-Services">
           <i class="now-ui-icons users_single-02"></i> Our Services
         </nav-link>
-      </drop-down>
+      </drop-down> -->
       <li class="nav-item">
         <a
-          class="nav-link btn btn-neutral"
+          class="nav-link btn btn-neutral darkColor"
           href="https://www.creative-tim.com/product/vue-now-ui-kit-pro"
           target="_blank"
         >
           <i class="now-ui-icons arrows-1_share-66"></i>
-          <p>Request A Quote</p>
+          <p><b>Request A Quote</b></p>
         </a>
       </li>
 

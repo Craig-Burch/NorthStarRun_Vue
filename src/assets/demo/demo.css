@@ -25,20 +25,32 @@
 }
 
 /*0.1 global css*/
+.darkBG {
+  background-color: #2a425e !important;
+}
 
+.darkColor {
+  color: #2a425e !important;
+}
 
 /*1.0 home page hero*/
 .heroBackgroundImage {
-  float: left;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  width: 100% !important;
-  vertical-align: middle; 
-  display: table-cell;
-  background-image: url('https://images.pexels.com/photos/956999/milky-way-starry-sky-night-sky-star-956999.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+  background-image: url('https://cdn.pixabay.com/photo/2017/06/21/15/08/horses-2427513_1280.jpg');
 }
 
+.heroBtn {
+  width: 200px;
+  transition: width .5s;
+}
+
+.heroBtn:hover {
+  width: 300px;
+  transition: width .5s;
+  color: #e1c79b;
+}
 
 /*scroll down*/
 .centerScroll {

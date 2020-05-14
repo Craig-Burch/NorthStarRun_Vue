@@ -67,8 +67,9 @@ h6, .h6{
 }
 p{
     line-height: 1.61em;
-    font-weight: 300;
-    font-size: 1.2em;
+    font-weight: 500;
+    font-size: 1.3em;
+    color: black;
 }
 
 .title{
@@ -134,11 +135,11 @@ p{
     }
 
     &.blockquote-primary{
-        border-color: $primary-color;
-        color: $primary-color;
+        border-color: #2a425e;
+        color: #2a425e;
 
         small{
-            color: $primary-color;
+            color: #2a425e;
         }
     }
 

@@ -1,3 +1,4 @@
+<!-- this code was moved to index -->
 <template>
   <div>
     <div class="page-header page-header-small">
