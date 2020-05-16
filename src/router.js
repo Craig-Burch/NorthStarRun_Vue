@@ -1,10 +1,10 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 import Index from './pages/Index.vue';
-import OurFarm from './pages/OurFarm.vue';
+import FAQ from './pages/FAQ.vue';
 import Gallery from './pages/Gallery.vue';
-import Login from './pages/Login.vue';
-import OurServices from './pages/OurServices.vue';
+import Contact from './pages/Contact.vue';
+import AboutUs from './pages/AboutUs.vue';
 import MainNavbar from './layout/MainNavbar.vue';
 import MainFooter from './layout/MainFooter.vue';
 
@@ -29,16 +29,16 @@ export default new Router({
       name: 'index',
       components: { default: Index, header: MainNavbar, footer: MainFooter },
       props: {
-        header: { colorOnScroll: 400 },
+        header: { colorOnScroll: 200 },
         footer: { backgroundColor: 'black' }
       }
     },
     {
-      path: '/Our-Farm',
-      name: 'ourFarm',
-      components: { default: OurFarm, header: MainNavbar, footer: MainFooter },
+      path: '/FAQ',
+      name: 'faq',
+      components: { default: FAQ, header: MainNavbar, footer: MainFooter },
       props: {
-        header: { colorOnScroll: 400 },
+        header: { colorOnScroll: 200 },
         footer: { backgroundColor: 'black' }
       }
     },
@@ -47,24 +47,25 @@ export default new Router({
       name: 'gallery',
       components: { default: Gallery, header: MainNavbar, footer: MainFooter },
       props: {
-        header: { colorOnScroll: 400 },
+        header: { colorOnScroll: 200 },
         footer: { backgroundColor: 'black' }
       }
     },
     {
-      path: '/login',
-      name: 'login',
-      components: { default: Login, header: MainNavbar },
+      path: '/Contact',
+      name: 'Contact',
+      components: { default: Contact, header: MainNavbar, footer: MainFooter  },
       props: {
-        header: { colorOnScroll: 400 }
+        header: { colorOnScroll: 200 },
+         footer: { backgroundColor: 'black' }
       }
     },
     {
-      path: '/Our-Services',
-      name: 'ourServices',
-      components: { default: OurServices, header: MainNavbar, footer: MainFooter },
+      path: '/About-Us',
+      name: 'aboutUs',
+      components: { default: AboutUs, header: MainNavbar, footer: MainFooter },
       props: {
-        header: { colorOnScroll: 400 },
+        header: { colorOnScroll: 200 },
         footer: { backgroundColor: 'black' }
       }
     }

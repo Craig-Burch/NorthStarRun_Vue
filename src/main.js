@@ -14,7 +14,7 @@ Vue.use(VueScrollTo)
 //default options for scroll
 Vue.use(VueScrollTo, {
      container: "body",
-     duration: 1000,
+     duration: 1200,
      easing: "ease-in",
      offset: 0,
      force: true,

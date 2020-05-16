@@ -53,4 +53,8 @@ export default {
   }
 };
 </script>
-<style></style>
+<style>
+  footer {
+    background-color: #2a425e !important
+  }
+</style>

@@ -1,28 +1,36 @@
 <template>
   <div>
     <div class="page-header page-header-medium heroBackgroundImage">
-      <div class="container mt-5">
-        <div class="row mt-5">
+      <div class="content-center">
+      <div class="container">
+        <div class="row ">
           <div class="col-md-6 ml-auto mr-auto text-center">
             <img src ="img/logo/logoScaled.png">
           </div>
         </div>
-        <div class="row mt-5">
+        <div class="row">
           <div class="col-md-6 ml-auto mr-auto text-center">
-            <h1>Welcome To NSR</h1>
+            <h1>Welcome To <br> North Star Run</h1>
           </div>
         </div>
-        <div class="row mt-1 ml-auto mr-auto">
-          
+        <div class="row ml-auto mr-auto" style="margin-top: -30px;">       
           <div class="col-md-6 col-sm-3">
             <a href="#" v-scroll-to="'#scrollDown'">
-              <n-button class="darkBG text-center float-right heroBtn">Our Mission</n-button>
+              <h4>
+               <n-button class="darkBG text-center float-right heroBtn">Our Mission</n-button>
+              </h4>
            </a>
           </div>
           <div class="col-md-6 col-sm-3">
-            <n-button class="darkBG text-center float-left heroBtn" >Our Services</n-button>
+            <router-link to="/About-Us">
+              <h4>
+                <n-button class="darkBG text-center float-left heroBtn" >About Us</n-button>
+              </h4>
+           </router-link>
           </div>
         </div>
+      </div>
+      <div id="scrollDown"></div>
       </div>
 
      <!-- orginal slide -->
@@ -66,7 +74,7 @@
 
 
     </div>
-    <div class="section section-about-us" id="scrollDown">
+    <div class="section section-about-us" id="">
       <div class="container">
         <div class="row">
           <div class="col-md-8 ml-auto mr-auto text-center">
@@ -117,15 +125,15 @@
              <!--  <p>
                 Your horse can enjoy the water from our spring, but we will always have fresh clean water available to those horses that don’t want to get their feet wet. Hay is supplemented year-round as needed with horse quality, locally grown grass hay. Access to salt and mineral blocks is always available. We rotational de-worm every 3 months and hoof trim every 6 weeks.  We apply fly spray (provided by us) in the summer and use fly masks (provided by owner) to help combat any fly issues. We are happy to schedule a vet appointment for any issues and will meet the vet at no extra charge.  We are available to coordinate semiannual or annual vaccinations with our vet at market cost.  We have several vets within minutes of our farm and Tryon Equine Hospital within 100 miles. 
               </p> -->
-              <p>
-                One of the best things about North Star Run is that we are very cognizant of the herd dynamic. We do our very best to find your horse the herd mates that maximize safety, comfort and health. Herd placement is determined by sex, age, temperament and nutritional needs.
-              </p>
               <!-- <p>
+                One of the best things about North Star Run is that we are very cognizant of the herd dynamic. We do our very best to find your horse the herd mates that maximize safety, comfort and health. Herd placement is determined by sex, age, temperament and nutritional needs.
+              </p> -->
+               <p>
                 We at NSR are committed to your horse’s well-being. TLC for each horse is of the utmost importance. Our daily hands on approach to your horse’s care is exactly that, hands on.  We get up close and personal with each horse. They are inspected daily.  We don’t just clance at your horse as we are driving by to feed them.  We personally check each horse from forelock to tail to make sure there are not any concerns we need to address.  Treating your horse as our own is our promise to you.
               </p>
-              <p>
+              <!-- <p>
                 We welcome visitors at any time. Several Major Airlines fly into the Charlotte Douglas International Airport.  All told, we are 65 miles North of the airport. We are only 10 minutes from the intersection of I-77 and I-40. Big rigs can deliver your horse to us with no difficulty. We have several hotels and restaurants nearby.  If you can’t come visit, we will do our best to bring your horse to you via pictures as often as you want.  We will do our best to keep you connected with your equine friend.
-              </p> -->
+              </p>  -->
             </div>
           </div>
         </div>
@@ -138,24 +146,24 @@
         <h4></h4>
       </div>
       <div class="row justify-content-center img-raised" >
-        <div class="col-12  mb-5">
-          <el-carousel height="500px">
+        <div class="col-12  mb-2 mt-2">
+          <el-carousel height="600px">
             <el-carousel-item>
-              <img class="d-block" src="https://cdn.pixabay.com/photo/2016/02/15/13/26/horse-1201143_1280.jpg" alt="First slide" />
+              <img class="d-block" src="https://cdn.pixabay.com/photo/2017/01/16/19/17/horses-1984977_1280.jpg" alt="First slide" />
               <div class="carousel-caption d-none d-md-block">
-                <h5>Nature, United States</h5>
+                <h5>Picture 1</h5>
               </div>
             </el-carousel-item>
             <el-carousel-item>
-              <img class="d-block" src="https://cdn.pixabay.com/photo/2016/10/17/11/00/iceland-1747368_1280.jpg" alt="Second slide" />
+              <img class="d-block" src="https://cdn.pixabay.com/photo/2016/01/19/17/23/countryside-1149680_1280.jpg" alt="Second slide" />
               <div class="carousel-caption d-none d-md-block">
-                <h5>Somewhere Beyond, United States</h5>
+                <h5>Picture 2</h5>
               </div>
             </el-carousel-item>
             <el-carousel-item>
-              <img class="d-block" src="https://cdn.pixabay.com/photo/2016/10/17/11/00/iceland-1747368_1280.jpg" alt="Third slide" />
+              <img class="d-block" src="https://cdn.pixabay.com/photo/2014/08/26/15/15/country-lane-428039_1280.jpg" alt="Third slide" />
               <div class="carousel-caption d-none d-md-block">
-                <h5>Yellowstone National Park, United States</h5>
+                <h5>Picture 3</h5>
               </div>
             </el-carousel-item>
           </el-carousel>
@@ -181,10 +189,7 @@
                 <h4 class="title">Wendy Holland</h4>
                 <p class="category text-primary">Owner</p>
                 <p class="">
-                  You can write here details about one of your team members. You
-                  can give more details about what they do. Feel free to add
-                  some <a href="#">links</a> for people to be able to follow
-                  them outside the site.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
                 </p>
                 <a href="#pablo" class="btn darkBG btn-icon btn-round"
                   ><i class="fab fa-twitter"></i
@@ -207,10 +212,7 @@
                 <h4 class="title">Jennifer Burch</h4>
                 <p class="category text-primary">Owner</p>
                 <p class="">
-                  You can write here details about one of your team members. You
-                  can give more details about what they do. Feel free to add
-                  some <a href="#">links</a> for people to be able to follow
-                  them outside the site.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
                 </p>
                 <a href="#pablo" class="btn darkBG btn-icon btn-round"
                   ><i class="fab fa-twitter"></i
@@ -230,10 +232,7 @@
                 <h4 class="title">Gary Holland</h4>
                 <p class="category text-primary">Owner</p>
                 <p class="">
-                  You can write here details about one of your team members. You
-                  can give more details about what they do. Feel free to add
-                  some <a href="#">links</a> for people to be able to follow
-                  them outside the site.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
                 </p>
                 <a href="#pablo" class="btn darkBG btn-icon btn-round"
                   ><i class="fab fa-google-plus"></i
@@ -252,8 +251,8 @@
     </div>
     <div class="section section-contact-us text-center">
       <div class="container">
-        <h2 class="title">Want to work with us?</h2>
-        <p class="description">Your project is very important to us.</p>
+        <h2 class="title">Want to talk?</h2>
+        <p class="description">Your inquiry is very important to us.</p>
         <div class="row">
           <div class="col-lg-6 text-center ml-auto mr-auto col-md-8">
             <fg-input

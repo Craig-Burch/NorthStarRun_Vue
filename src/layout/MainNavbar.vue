@@ -21,9 +21,7 @@
         width="200"
         trigger="hover"
       >
-        <div class="popover-body">
-          Designed by Invision. Coded by Creative Tim
-        </div>
+
       </el-popover>
     </template>
     <template slot="navbar-menu">
@@ -42,7 +40,7 @@
       <li class="nav-item">
         <a class="nav-link">
           <router-link to="/Gallery">
-            <i class="now-ui-icons arrows-1_cloud-download-93"></i>
+            <i style="font-size: 17px;" class="now-ui-icons media-1_album"></i>
             <p style="color: white;">gallery</p>
           </router-link>
         </a>
@@ -50,96 +48,36 @@
 
       <li class="nav-item">
         <a class="nav-link">
-          <router-link to="/Our-Services">
-            <i class="now-ui-icons users_single-02"></i> 
-            <p style="color: white;">Our Services</p>
+          <router-link to="/About-Us">
+            <i style="font-size: 17px;" class="now-ui-icons emoticons_satisfied"></i> 
+            <p style="color: white;">About Us</p>
           </router-link>
         </a>
       </li>
 
       <li class="nav-item">
         <a class="nav-link">
-          <router-link to="/login">
-            <i class="now-ui-icons users_circle-08"></i> 
+          <router-link to="/FAQ">
+            <i style="font-size: 17px;" class="now-ui-icons users_circle-08"></i> 
             <p style="color: white;">FAQ</p>
           </router-link>
         </a>
       </li>
-
-      <!-- <drop-down
-        tag="li"
-        title="Portfolio"
-        icon="now-ui-icons design_app"
-        class="nav-item"
-      >
-        <nav-link to="/">
-          <i class="now-ui-icons business_chart-pie-36"></i> All
-        </nav-link>
-        <a
-          href="https://demos.creative-tim.com/vue-now-ui-kit/documentation"
-          target="_blank"
-          class="dropdown-item"
-        >
-          <i class="now-ui-icons design_bullet-list-67"></i> Web 
-        </a>
-        <a
-          href="https://demos.creative-tim.com/vue-now-ui-kit/documentation"
-          target="_blank"
-          class="dropdown-item"
-        >
-          <i class="now-ui-icons design_bullet-list-67"></i> Graphic 
-        </a>
-      </drop-down> -->
-      <!-- <drop-down
-              tag="li"
-              title="Explore"
-              icon="now-ui-icons design_image"
-              class="nav-item"
-      >
-        <nav-link to="/Gallery">
-          <i class="now-ui-icons education_paper"></i> Gallery
-        </nav-link>
-        <nav-link to="/Our-Farm">
-          <i class="now-ui-icons education_paper"></i> About Our Farm
-        </nav-link>
-        <nav-link to="/login">
-          <i class="now-ui-icons users_circle-08"></i> Login
-        </nav-link>
-        <nav-link to="/Our-Services">
-          <i class="now-ui-icons users_single-02"></i> Our Services
-        </nav-link>
-      </drop-down> -->
       <li class="nav-item">
-        <a
-          class="nav-link btn btn-neutral darkColor"
-          href="https://www.creative-tim.com/product/vue-now-ui-kit-pro"
-          target="_blank"
-        >
-          <i class="now-ui-icons arrows-1_share-66"></i>
-          <p><b>Request A Quote</b></p>
+        <a class="nav-link btn btn-neutral darkColor">
+          <router-link to="/Contact">
+            <i style="color: #2a425e; " class="now-ui-icons ui-2_chat-round mr-1"></i>
+            <p><b>Request A Quote</b></p>
+          </router-link>
         </a>
       </li>
-
-      <!-- <li class="nav-item">
-        <a
-          class="nav-link"
-          rel="tooltip"
-          title="Follow us on Twitter"
-          data-placement="bottom"
-          href="https://twitter.com/CreativeTim"
-          target="_blank"
-        >
-          <i class="fab fa-twitter"></i>
-          <p class="d-lg-none d-xl-none">Twitter</p>
-        </a>
-      </li> -->
       <li class="nav-item">
         <a
           class="nav-link"
           rel="tooltip"
           title="Like us on Facebook"
           data-placement="bottom"
-          href="https://www.facebook.com/CreativeTim"
+          href=""
           target="_blank"
         >
           <i class="fab fa-facebook-square"></i>
@@ -152,7 +90,7 @@
           rel="tooltip"
           title="Follow us on Instagram"
           data-placement="bottom"
-          href="https://www.instagram.com/CreativeTimOfficial"
+          href=""
           target="_blank"
         >
           <i class="fab fa-instagram"></i>
@@ -182,4 +120,10 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+
+*:focus {
+  outline:none !important
+}
+
+</style>
