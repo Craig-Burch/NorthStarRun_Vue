@@ -1,8 +1,8 @@
 <template>
   <div>
-    <div class="page-header page-header-small heroBackgroundImage" style="background-image: url('https://cdn.pixabay.com/photo/2017/01/12/12/49/painting-1974614_1280.jpg');"> 
+    <div class="page-header page-header-small heroBackgroundImage" style="background-image: url('img/contact.png');"> 
       <div class="content-center">
-      <div class="container mt-5">
+      <div class="container">
          <info-section class="info-hover"
               direction="vertical"
               type="primary"
@@ -11,20 +11,23 @@
             <hr style="background-color: white !important">
            
          </info-section>
-        <div class="row ">
+        <!-- <div class="row ">
           <div class="col-md-4 ml-auto mr-auto text-center ">
-            <i style="font-size: 40px;" class="now-ui-icons tech_mobile"></i>
-            <h4 class="mt-2"> Feel free to call us by clicking on the icon above and talk about your questions regarding our horse retirement farm.</h4>
+            <i style="font-size: 35px; margin-bottom: 5px;" class="now-ui-icons tech_mobile darkColor contactIcons"></i>
+            <h3>Phone</h3>           
+            <h4 class="mt-below-icons"> Feel free to call us by clicking on the icon above and talk about your questions regarding our horse retirement farm.</h4>
           </div>
           <div class="col-md-4 ml-auto mr-auto text-center  ">
-            <i style="font-size: 40px;" class="now-ui-icons ui-1_email-85"></i>
-             <h4 class="mt-2">You can email us by clicking the icon above or filling out contact form below. We look forward to hearing from you!</h4>
+            <i style="font-size: 35px; margin-bottom: 5px;" class="now-ui-icons ui-1_email-85 darkColor contactIcons"></i>
+            <h3>Email</h3> 
+             <h4 class="mt-below-icons">You can email us by clicking the icon above or filling out contact form below. We look forward to hearing from you!</h4>
           </div>
           <div class="col-md-4 ml-auto mr-auto text-center  ">
-            <i style="font-size: 40px;" class="now-ui-icons media-1_camera-compact"></i>
-             <h4 class="mt-2"> Follow us on our Instagram to keep up with the news surrounding our business. Thank you for your interest!</h4>
+            <i style="font-size: 35px; margin-bottom: 5px;" class="now-ui-icons media-1_camera-compact darkColor contactIcons"></i>
+            <h3>Instargram</h3> 
+             <h4 class="mt-below-icons"> Follow us on our Instagram to keep up with the news surrounding our business. Thank you for your interest!</h4>
           </div>
-        </div>
+        </div> -->
         </div>
       </div>
 </div>
@@ -103,4 +106,14 @@ export default {
     height: 75vh;
     object-fit: cover;
   }
+
+  .contactIcons {
+    background-color: white; 
+    border-radius: 40px; 
+    padding: 20px;
+  }
+
+ .mt-below-icons {
+  margin-top: -20px;
+ }
 </style>

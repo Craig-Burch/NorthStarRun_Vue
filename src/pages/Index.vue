@@ -13,11 +13,16 @@
             <h1>Welcome To <br> North Star Run</h1>
           </div>
         </div>
-        <div class="row ml-auto mr-auto" style="margin-top: -30px;">       
+        <div class="row ml-auto mr-auto"> 
+           <div class="col-md-12 ">
+            <h5>Statesville, NC</h5>
+          </div>
+        </div>
+        <div class="row ml-auto mr-auto" style="margin-top: -10px;">       
           <div class="col-md-6 col-sm-3">
             <a href="#" v-scroll-to="'#scrollDown'">
               <h4>
-               <n-button class="darkBG text-center float-right heroBtn">Our Mission</n-button>
+               <n-button class="darkBG text-center float-right heroBtn">Choose Retirement?</n-button>
               </h4>
            </a>
           </div>
@@ -76,7 +81,7 @@
     </div>
     <div class="section section-about-us" id="">
       <div class="container">
-        <div class="row">
+        <!-- <div class="row">
           <div class="col-md-8 ml-auto mr-auto text-center">
             <h2 class="title">Our Mission</h2>
             <p class="">
@@ -85,7 +90,7 @@
               Ki isn’t really that old, but he has health issues that make him un-rideable. He did an amazing job taking care of me over the years.  I wanted to give back to him in the most loving way. Whether it be old age, injury or just a reprieve from high boarding costs, consider NSR a selfless answer to a lease on a new life.
             </p>
           </div>
-        </div>
+        </div> -->
         <div class="separator separator-primary"></div>
         <div class="section-story-overview">
           <div class="row">
@@ -173,82 +178,7 @@
   </div>
 
 
-
-    <div class="section section-team text-center">
-      <div class="container">
-        <h2 class="title">Here is our team</h2>
-        <div class="team">
-          <div class="row">
-            <div class="col-md-4">
-              <div class="team-player">
-                <img
-                  src="img/Wendy.jpg"
-                  alt="Thumbnail Image"
-                  class="rounded-circle img-fluid img-raised"
-                />
-                <h4 class="title">Wendy Holland</h4>
-                <p class="category text-primary">Owner</p>
-                <p class="">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
-                </p>
-                <a href="#pablo" class="btn darkBG btn-icon btn-round"
-                  ><i class="fab fa-twitter"></i
-                ></a>
-                <a href="#pablo" class="btn darkBG btn-icon btn-round"
-                  ><i class="fab fa-instagram"></i
-                ></a>
-                <a href="#pablo" class="btn darkBG btn-icon btn-round"
-                  ><i class="fab fa-facebook-square"></i
-                ></a>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="team-player">
-                <img
-                  src="img/JenniferAndKi.jpg"
-                  alt="Thumbnail Image"
-                  class="rounded-circle img-fluid img-raised"
-                />
-                <h4 class="title">Jennifer Burch</h4>
-                <p class="category text-primary">Owner</p>
-                <p class="">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
-                </p>
-                <a href="#pablo" class="btn darkBG btn-icon btn-round"
-                  ><i class="fab fa-twitter"></i
-                ></a>
-                <a href="#pablo" class="btn darkBG btn-icon btn-round"
-                  ><i class="fab fa-linkedin"></i
-                ></a>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="team-player">
-                <img
-                  src="img/GaryAndWendy.jpg"
-                  alt="Thumbnail Image"
-                  class="rounded-circle img-fluid img-raised"
-                />
-                <h4 class="title">Gary Holland</h4>
-                <p class="category text-primary">Owner</p>
-                <p class="">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
-                </p>
-                <a href="#pablo" class="btn darkBG btn-icon btn-round"
-                  ><i class="fab fa-google-plus"></i
-                ></a>
-                <a href="#pablo" class="btn darkBG btn-icon btn-round"
-                  ><i class="fab fa-youtube"></i
-                ></a>
-                <a href="#pablo" class="btn darkBG btn-icon btn-round"
-                  ><i class="fab fa-twitter"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+ 
     <div class="section section-contact-us text-center">
       <div class="container">
         <h2 class="title">Want to talk?</h2>

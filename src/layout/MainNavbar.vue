@@ -36,41 +36,62 @@
           <p>Download</p>
         </a>
       </li> -->
-
       <li class="nav-item">
         <a class="nav-link">
-          <router-link to="/Gallery">
-            <i style="font-size: 17px;" class="now-ui-icons media-1_album"></i>
-            <p style="color: white;">gallery</p>
+          <router-link to="/">
+            <i style="font-size: 17px;" class="now-ui-icons shopping_shop"></i> 
+            <p class="navbarText">Home</p>
           </router-link>
         </a>
       </li>
-
       <li class="nav-item">
         <a class="nav-link">
           <router-link to="/About-Us">
             <i style="font-size: 17px;" class="now-ui-icons emoticons_satisfied"></i> 
-            <p style="color: white;">About Us</p>
+            <p class="navbarText">About Us</p>
           </router-link>
         </a>
       </li>
-
-      <li class="nav-item">
+       <li class="nav-item">
         <a class="nav-link">
           <router-link to="/FAQ">
             <i style="font-size: 17px;" class="now-ui-icons users_circle-08"></i> 
-            <p style="color: white;">FAQ</p>
+            <p class="navbarText">FAQ</p>
           </router-link>
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link btn btn-neutral darkColor">
-          <router-link to="/Contact">
-            <i style="color: #2a425e; " class="now-ui-icons ui-2_chat-round mr-1"></i>
-            <p><b>Request A Quote</b></p>
+        <a class="nav-link">
+          <router-link to="/Pricing">
+            <i style="font-size: 17px;" class="now-ui-icons business_money-coins"></i> 
+            <p class="navbarText">Pricing</p>
           </router-link>
         </a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link">
+          <router-link to="/Contact">
+            <i style="font-size: 17px;" class="now-ui-icons ui-2_chat-round"></i>
+            <p class="navbarText">Contact Us</p>
+          </router-link>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link">
+          <router-link to="/Gallery">
+            <i style="font-size: 17px;" class="now-ui-icons media-1_album"></i>
+            <p class="navbarText">Gallery</p>
+          </router-link>
+        </a>
+      </li>  
+     <!--  <li class="nav-item">
+        <a class="nav-link btn btn-neutral darkColor">
+          <router-link to="/Contact">
+            <i style="color: #2a425e; " class="now-ui-icons ui-2_chat-round mr-1"></i>
+            <p><b>Contact Us</b></p>
+          </router-link>
+        </a>
+      </li> -->
       <li class="nav-item">
         <a
           class="nav-link"
@@ -121,9 +142,13 @@ export default {
 </script>
 
 <style scoped>
-
+/*remove link style around logo on click*/
 *:focus {
   outline:none !important
+}
+.navbarText {
+  color: white; 
+  font-size: 14px;
 }
 
 </style>

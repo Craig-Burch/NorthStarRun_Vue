@@ -1,13 +1,13 @@
 <template>
   <div class="lightBG">
-   <div class="page-header page-header-small heroGalleryBackgroundImage" style="background-image: url('img/Light.jpeg');"> 
+   <div class="page-header page-header-small heroGalleryBackgroundImage" style="background-image: url('img/Light.png');"> 
     <div class="container mt-5">
-      <div class="row d-flex justify-content-center mt-5">
-        <div class="col-4 align-self-center" style="text-align: left">
+      <div class="row d-flex justify-content-left mt-5">
+        <div class="col-md-4 col-sm-12 align-self-center" style="text-align: left">
           <h1>Check Out Our Farm</h1>
           <h3>We take pride in our services and our ability to maintain a healthy enviornment for your horse.</h3>
         </div>
-        <div class="col-8">
+        <!-- <div class="col-8">
           <img    style=""
                   src="img/GalleryAsset.png"
                   alt="Thumbnail Image"
@@ -15,7 +15,7 @@
                   height=""
                   width="800px"
                 />
-        </div>
+        </div> -->
       </div>
     </div>
   </div>

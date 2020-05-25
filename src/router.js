@@ -5,6 +5,7 @@ import FAQ from './pages/FAQ.vue';
 import Gallery from './pages/Gallery.vue';
 import Contact from './pages/Contact.vue';
 import AboutUs from './pages/AboutUs.vue';
+import Pricing from './pages/Pricing.vue';
 import MainNavbar from './layout/MainNavbar.vue';
 import MainFooter from './layout/MainFooter.vue';
 
@@ -29,7 +30,7 @@ export default new Router({
       name: 'index',
       components: { default: Index, header: MainNavbar, footer: MainFooter },
       props: {
-        header: { colorOnScroll: 200 },
+        header: { colorOnScroll: 100 },
         footer: { backgroundColor: 'black' }
       }
     },
@@ -38,7 +39,7 @@ export default new Router({
       name: 'faq',
       components: { default: FAQ, header: MainNavbar, footer: MainFooter },
       props: {
-        header: { colorOnScroll: 200 },
+        header: { colorOnScroll: 100 },
         footer: { backgroundColor: 'black' }
       }
     },
@@ -47,7 +48,7 @@ export default new Router({
       name: 'gallery',
       components: { default: Gallery, header: MainNavbar, footer: MainFooter },
       props: {
-        header: { colorOnScroll: 200 },
+        header: { colorOnScroll: 100 },
         footer: { backgroundColor: 'black' }
       }
     },
@@ -56,7 +57,7 @@ export default new Router({
       name: 'Contact',
       components: { default: Contact, header: MainNavbar, footer: MainFooter  },
       props: {
-        header: { colorOnScroll: 200 },
+        header: { colorOnScroll: 100 },
          footer: { backgroundColor: 'black' }
       }
     },
@@ -65,7 +66,16 @@ export default new Router({
       name: 'aboutUs',
       components: { default: AboutUs, header: MainNavbar, footer: MainFooter },
       props: {
-        header: { colorOnScroll: 200 },
+        header: { colorOnScroll: 100 },
+        footer: { backgroundColor: 'black' }
+      }
+    },
+    {
+      path: '/Pricing',
+      name: 'pricing',
+      components: { default: Pricing, header: MainNavbar, footer: MainFooter },
+      props: {
+        header: { colorOnScroll: 100 },
         footer: { backgroundColor: 'black' }
       }
     }
