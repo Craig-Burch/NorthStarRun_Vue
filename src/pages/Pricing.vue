@@ -1,14 +1,15 @@
 <template>
   <div>
-    <div class="page-header page-header-small heroBackgroundImage" style="background-image: url('img/field2.png')">
+    <div class="page-header page-header-small heroBackgroundImage globalHeaderMobile" style="background-image: url('img/field22.jpg')">
       <div class="content-center">
       <div class="container">
         <info-section class="info-hover"
               direction="vertical"
               type="primary"
               icon="now-ui-icons ui-2_chat-round">
-            <h1 class="info-title">Pricing</h1>
+            <h1 class="info-title smallerMobileH1">Pricing</h1>
             <hr style="background-color: white !important">
+            <h4 style="color: white">Our bording fee to provide exceptional, quality, care for your horse is $350 per month.</h4>
            
          </info-section>
 
@@ -18,16 +19,17 @@
     <div class="section">
       <div class="container">
        
-        <h3 class="title">What You Get For Your Money</h3>
+        <h3 class="title">Our Services Includes:</h3>
         <ul>
-          <li>Our bording fee to provide exceptional, quality, care for your horse is $350 per month.</li>
-          <li>Services include hay fed, year round as needed, "Nutrina Pro Force Senior Feed" for our retirees needing extra help keeping weight on.</li>
+          <li>Hay fed year round as needed </li>
+          <li>Nutrina Pro Force Senior Feed for our retirees needing extra help keeping weight on</li>
           <li>Trimming Every 6 Weeks</li>
-          <li>Rotational Dewormming 4 times per year</li>
-          <li>Access to salt and mineral block</li>
+          <li>Rotational Deworming 4 times per year</li>
+          <li>Access to salt and mineral blocks</li>
           <li>Fly spray in the summer (provided by us) and we use fly masks as well (provided by you)</li>
           <li>Daily hands on inspection of each horse</li>
-          <li>Semi-annual / annual vaccination and dental work are the only extra costs</li>
+          <li>TLC is of the utmost importance</li>
+          <li>Semi-annual / annual vaccination and dental work are the only extra costs.</li>
           
          
         </ul>

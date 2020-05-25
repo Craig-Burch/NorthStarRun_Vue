@@ -1,28 +1,28 @@
 <template>
   <div>
-    <div class="page-header page-header-small heroBackgroundImage" style="background-image: url('img/field.png')">
+    <div class="page-header page-header-small heroBackgroundImage globalHeaderMobile" style="background-image: url('img/field12.jpg')">
       <div class="content-center">
       <div class="container">
         <info-section class="info-hover"
               direction="vertical"
               type="primary"
               icon="now-ui-icons ui-2_chat-round">
-            <h1 class="info-title">About Us</h1>
+            <h1 class="info-title smallerMobileH1">About Us</h1>
             <hr style="background-color: white !important">
            
          </info-section>
           <div class="row ml-auto mr-auto" style="margin-top: -10px;">       
-          <div class="col-md-6 col-sm-3">
+          <div class="col-md-6 col-sm-12 mobileMarginBtn">
             <a href="#" v-scroll-to="'#scrollDown-OurFarm'">
               <h4>
-               <n-button class="darkBG text-center float-right heroBtn">Our Farm</n-button>
+               <n-button class="darkBG text-center heroBtn">Our Farm</n-button>
               </h4>
            </a>
           </div>
-          <div class="col-md-6 col-sm-3">
+          <div class="col-md-6 col-sm-12 mobileMarginBtn">
             <a href="#" v-scroll-to="'#scrollDown-OurTeam'">
               <h4>
-                <n-button class="darkBG text-center float-left heroBtn" >Our Team</n-button>
+                <n-button class="darkBG text-center heroBtn" >Our Team</n-button>
               </h4>
            </a>
           </div>
@@ -37,21 +37,22 @@
        
         <h3 class="title">Our Farm</h3>
         <p class="">
-          Welcome to North Star Run, we are nestled on 160 Acres in Statesville, North Carolina.  This is a 5 Generation Family Farm located just 50 miles north of the Charlotte Douglas International Airport.  Our NC weather boasts all four seasons, but not extreme in any way—perfect for our retirees. Carved out from our farm’s best acreage, the lush rolling hills of our pasture include ample amount of tree lined shade, a natural spring running through the property, extremely safe fencing and a 40’ x 44’ run in to provide shelter in inclement weather.  
+          Welcome to North Star Run! <br><br>
+          Nort Star Run is nestled on 160 Acres in Statesville, North Carolina.  This is a 5 Generation Family Farm located just 50 miles north of the Charlotte Douglas International Airport.  Our NC weather boasts all four seasons, but not extreme in any way—perfect for our retirees. Carved out from our farm’s best acreage, the lush rolling hills of our pastures include ample amount of tree lined shade, a natural spring running through the property, extremely safe fencing and a 40’ x 44’ run in to provide shelter in inclement weather.  
           <br> <br>
-          Your horse can enjoy the water from our spring, but we will always have fresh clean water available to those horses that don’t want to get their feet wet. Hay is supplemented year-round as needed with horse quality, locally grown grass hay. Access to salt and mineral blocks is always available. We rotational de-worm every 3 months and hoof trim every 6 weeks.  We apply fly spray (provided by us) in the summer and use fly masks (provided by owner) to help combat any fly issues. We are happy to schedule a vet appointment for any issues and will meet the vet at no extra charge.  We are available to coordinate semiannual or annual vaccinations with our vet at market cost.  We have several vets within minutes of our farm and Tryon Equine Hospital within 100 miles. 
+          Your horse can enjoy the water from our spring, but we will always have fresh clean water available to those horses that don’t want to get their feet wet. Hay is supplemented year-round as needed with horse quality, locally grown grass hay. Access to salt and mineral blocks are always available. We rotational de-worm every 3 months and hoof trim every 6 weeks.  We apply fly spray (provided by us) in the summer and use fly masks (provided by owner) to help combat any fly issues. We are happy to schedule a vet appointment for any issues and will meet the vet at no extra charge.  We are available to coordinate semiannual or annual vaccinations with our vet at market cost.  We have several vets within minutes of our farm and Tryon Equine Hospital within 100 miles. 
           <br><br>
           One of the best things about North Star Run is that we are very cognizant of the herd dynamic. We do our very best to find your horse the herd mates that maximize safety, comfort and health. Herd placement is determined by sex, age, temperament and nutritional needs.
           <br><br>
-          We at NSR are committed to your horse’s well-being. TLC for each horse is of the utmost importance. Our daily hands on approach to your horse’s care is exactly that, hands on.  We get up close and personal with each horse. They are inspected daily.  We don’t just clance at your horse as we are driving by to feed them.  We personally check each horse from forelock to tail to make sure there are not any concerns we need to address.  Treating your horse as our own is our promise to you.
+          We at NSR are committed to your horse’s well-being. TLC for each horse is of the utmost importance. Our daily hands on approach to your horse’s care is exactly that, hands on.  We get up close and personal with each horse. They are inspected daily.  We don’t just glance at your horse as we are driving by to feed them.  We personally check each horse from forelock to tail to make sure there are not any concerns we need to address.  Treating your horse as our own is our promise to you.
           <br><br>
           We welcome visitors at any time. Several Major Airlines fly into the Charlotte Douglas International Airport.  All told, we are 65 miles North of the airport. We are only 10 minutes from the intersection of I-77 and I-40. Big rigs can deliver your horse to us with no difficulty. We have several hotels and restaurants nearby.  If you can’t come visit, we will do our best to bring your horse to you via pictures as often as you want.  We will do our best to keep you connected with your equine friend. 
          </p>
-         
+         <div id="scrollDown-OurTeam"></div>
       </div>
     </div>
      <!-- move to about us page and transistion section to our experience, for wendy use picture of her and gary, dont use mason and wendy photo for now. -->
-    <div class="section section-team text-center" id="scrollDown-OurTeam">
+    <div class="section section-team text-center" >
       <div class="container">
         <h3 class="title" > Our Team </h3>
          <p class="mb-5">
@@ -71,7 +72,7 @@
                 <h4 class="title">Jennifer Burch</h4>
                 <p class="category text-primary">Owner</p>
                 <p class="">
-                  Horses are my passion. I’ve been involved in the Equine Industry for the past 41 years in many capacities; trainer, riding instructor, show coach, boarding barn owner/manager, foaling manager, and horse owner.  
+                  Horses are my passion. I’ve been involved in the Equine Industry for the past 41 years in many capacities; trainer, riding instructor, competitor, boarding barn owner/manager, foaling manager, and horse owner.  
                   <!-- I am so blessed to have had so many amazing opportunities in the horse world.  -->
                   I’m excited to take this knowledge into the retirement boarding industry.
                 </p>

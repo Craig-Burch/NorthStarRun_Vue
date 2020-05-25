@@ -1,7 +1,7 @@
 <!-- this code was moved to index -->
 <template>
   <div>
-    <div class="page-header page-header-small heroBackgroundImage" style="background-image: url('img/FAQhorse.png')"> 
+    <div class="page-header page-header-small heroBackgroundImage globalHeaderMobile" style="background-image: url('img/faqHorse2.jpg')"> 
 
       <div class="content-center">
         <div class="container">
@@ -9,7 +9,7 @@
               direction="vertical"
               type="primary"
               icon="now-ui-icons ui-2_chat-round">
-            <h1 class="info-title">Questions and Answers</h1>
+            <h1 class="info-title smallerMobileH1">Questions and Answers</h1>
             <hr style="background-color: white !important">
             <h4 style="color: white">Common questions answered for your convenience.</h4>
          </info-section>
@@ -37,7 +37,7 @@
               icon="now-ui-icons ui-2_chat-round">
            <h3 class="title" style="margin-bottom: 10px !important;">What type of fencing is used on the farm for the horses? </h3>
            <ul>
-             <li>  White, 3 rail electric tape with Tpost and Solar panel chargers. All Tpost tops are protected with rubber caps.
+             <li>  White 3 rail electric tape with Tposts and solar panel chargers. All Tposts tops are protected with rubber caps.
              </li>
            </ul>
         </info-section>
@@ -69,9 +69,9 @@
               direction="vertical"
               type="primary"
               icon="now-ui-icons ui-2_chat-round">
-           <h3 class="title" style="margin-bottom: 10px !important;">How far is the closest surgical center?  </h3>
+           <h3 class="title" style="margin-bottom: 10px !important;">How far is the closest surgical center?  </h3> 
            <ul>
-             <li>  Approximately 100 miles. Tryon Equine Hospital in Columbus, NC. (add link)
+             <li>  Approximately 100 miles. <a target="_blank" href="https://www.tryonequine.com/"> Tryon Equine Hospital </a> in Columbus, NC. 
              </li>
            </ul>
         </info-section>
@@ -144,7 +144,7 @@
               direction="vertical"
               type="primary"
               icon="now-ui-icons ui-2_chat-round">
-           <h3 class="title" style="margin-bottom: 10px !important;">If we did not answer your specific questions, please ask. We are happy to answer any questions you may have. </h3>
+           <h3 class="title" style="margin-bottom: 10px !important;">We are happy to answer your specific questions if you don't see them here. Please contact us and we will gladly answer your questions.</h3>
           
         </info-section>
       </div>

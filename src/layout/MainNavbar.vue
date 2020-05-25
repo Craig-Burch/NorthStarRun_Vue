@@ -11,7 +11,7 @@
         <img
               v-lazy="'img/navBarLogoScaled.png'"
               alt="North Star Run"
-              height="97px"
+              class="navbar-logo-resposive"
             />
       </router-link>
       <el-popover
@@ -150,5 +150,17 @@ export default {
   color: white; 
   font-size: 14px;
 }
+/*respnsiveness*/
+.navbar-logo-resposive {
+  height:97px !important;
+}
+
+@media only screen and (max-width: 1200px) {
+  .navbar-logo-resposive {
+  height:70px !important;
+
+  }
+}
+
 
 </style>

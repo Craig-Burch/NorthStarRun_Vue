@@ -1,41 +1,41 @@
 <template>
   <div>
-    <div class="page-header page-header-medium heroBackgroundImage">
+    <div class="page-header page-header-medium heroBackgroundImage" style="background-image: url('img/nc.jpg')">
       <div class="content-center">
       <div class="container">
         <div class="row ">
-          <div class="col-md-6 ml-auto mr-auto text-center">
-            <img src ="img/logo/logoScaled.png">
+          <div class="col-md-6 col-sm-6 ml-auto mr-auto text-center">
+            <img class="heroLogo" src="img/logo/logoScaled.png">
           </div>
         </div>
         <div class="row">
           <div class="col-md-6 ml-auto mr-auto text-center">
-            <h1>Welcome To <br> North Star Run</h1>
+            <h1 class="smallerMobileH1">Welcome To <br> North Star Run</h1>
           </div>
         </div>
         <div class="row ml-auto mr-auto"> 
            <div class="col-md-12 ">
-            <h5>Statesville, NC</h5>
+            <h3>Statesville, NC</h3>
           </div>
         </div>
         <div class="row ml-auto mr-auto" style="margin-top: -10px;">       
-          <div class="col-md-6 col-sm-3">
+          <div class="col-md-6 col-sm-12 mobileMarginBtn">
             <a href="#" v-scroll-to="'#scrollDown'">
               <h4>
-               <n-button class="darkBG text-center float-right heroBtn">Choose Retirement?</n-button>
+               <n-button class="darkBG text-center heroBtn">Choose Retirement?</n-button>
               </h4>
            </a>
           </div>
-          <div class="col-md-6 col-sm-3">
+          <div class="col-md-6 col-sm-12 mobileMarginBtn" id="scrollDown">
             <router-link to="/About-Us">
               <h4>
-                <n-button class="darkBG text-center float-left heroBtn" >About Us</n-button>
+                <n-button class="darkBG text-center heroBtn" >About Us</n-button>
               </h4>
            </router-link>
           </div>
         </div>
       </div>
-      <div id="scrollDown"></div>
+      <div ></div>
       </div>
 
      <!-- orginal slide -->
@@ -121,24 +121,31 @@
                 style="background-image: url('https://cdn.pixabay.com/photo/2016/10/17/11/00/iceland-1747368_1280.jpg')"
               ></div>
               <h3>
-                A little about our Ranch
+                Are you considering retirement for your horse?
               </h3>
               <p>
-                North Star Run is nestled on 160 Acres in Statesville, North Carolina.  This is a 5 Generation Family Farm located just 50 miles north of the Charlotte Douglas International Airport.  Our NC weather boasts all four seasons, but not extreme in any way—perfect for our retirees. Carved out from our farm’s best acreage, the lush rolling hills of our pasture include ample amount of tree lined shade, a natural spring running through the property, extremely safe fencing and a 50’ x 80’ run in to provide shelter in inclement weather.  
+               In 2017, I retired my Thoroughbred, Ki, to a retirement farm in Kentucky. I
+               anguished over that decision. I knew it was the right decision, when I saw him
+               gallop across the pasture and play in the pond with his herd mates. To see Ki just
+               “being a horse” in a peaceful, natural herd environment makes me so happy and I
+               know it’s what he deserves. Let North Star Run welcome your horse to
+               retirement. 
 
               </p>
-             <!--  <p>
-                Your horse can enjoy the water from our spring, but we will always have fresh clean water available to those horses that don’t want to get their feet wet. Hay is supplemented year-round as needed with horse quality, locally grown grass hay. Access to salt and mineral blocks is always available. We rotational de-worm every 3 months and hoof trim every 6 weeks.  We apply fly spray (provided by us) in the summer and use fly masks (provided by owner) to help combat any fly issues. We are happy to schedule a vet appointment for any issues and will meet the vet at no extra charge.  We are available to coordinate semiannual or annual vaccinations with our vet at market cost.  We have several vets within minutes of our farm and Tryon Equine Hospital within 100 miles. 
-              </p> -->
-              <!-- <p>
-                One of the best things about North Star Run is that we are very cognizant of the herd dynamic. We do our very best to find your horse the herd mates that maximize safety, comfort and health. Herd placement is determined by sex, age, temperament and nutritional needs.
-              </p> -->
+              <br>
                <p>
-                We at NSR are committed to your horse’s well-being. TLC for each horse is of the utmost importance. Our daily hands on approach to your horse’s care is exactly that, hands on.  We get up close and personal with each horse. They are inspected daily.  We don’t just clance at your horse as we are driving by to feed them.  We personally check each horse from forelock to tail to make sure there are not any concerns we need to address.  Treating your horse as our own is our promise to you.
+                Considering Retirement Living for your horse?  Wondering if it’s the right choice for your equine
+                partner?  It’s a difficult decision to make. I know, I’ve been there. In 2017 I retired my horse Ki to a
+                retirement farm. I anguished over that decision, but I knew it was the right one when I see Ki just “being
+                a horse” in a peaceful, natural herd environment. He’s thriving and happy and I know that’s what he
+                deserves.
               </p>
-              <!-- <p>
-                We welcome visitors at any time. Several Major Airlines fly into the Charlotte Douglas International Airport.  All told, we are 65 miles North of the airport. We are only 10 minutes from the intersection of I-77 and I-40. Big rigs can deliver your horse to us with no difficulty. We have several hotels and restaurants nearby.  If you can’t come visit, we will do our best to bring your horse to you via pictures as often as you want.  We will do our best to keep you connected with your equine friend.
-              </p>  -->
+              <br>
+              <p>
+                Whatever the reason you are considering equine retirement, just know I have found it’s always a
+                wonderful, selfless answer to many different scenarios.  You will be offering him a natural, peaceful way
+                of life in a safe environment.
+              </p>  
             </div>
           </div>
         </div>
@@ -152,7 +159,7 @@
       </div>
       <div class="row justify-content-center img-raised" >
         <div class="col-12  mb-2 mt-2">
-          <el-carousel height="600px">
+          <el-carousel class="carousel-height">
             <el-carousel-item>
               <img class="d-block" src="https://cdn.pixabay.com/photo/2017/01/16/19/17/horses-1984977_1280.jpg" alt="First slide" />
               <div class="carousel-caption d-none d-md-block">
@@ -247,9 +254,42 @@ export default {
 };
 </script>
 <style>
+  @media only screen and (max-width: 575px) {
+   .heroLogo {
+    width: 175px;
+   }
+  }
+  @media only screen and (max-width: 380px) {
+   .heroLogo {
+     width: 150px;
+   }
+  }
+
+  .el-carousel__arrow {
+    color: white !important;
+    border: 1px solid white;
+  }
+  .carousel-height {
+    height: 600px;
+  }
+  @media only screen and (max-width: 989px) {
+  .carousel-height {
+    height: 350px;
+   }
+ }
   .carousel-inner img {
     width: 100%;
     height: 75vh;
     object-fit: cover;
   }
+
+  @media only screen and (max-width: 989px) {
+  .carousel-inner img {
+  height: 100vh;
+  border: 1px solid red;
+
+  }
+}
+
+
 </style>

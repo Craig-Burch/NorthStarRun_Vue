@@ -5,7 +5,8 @@
 2.0 gradient BG and what we do section
 3.0 contact modals
 4.0 gallery
-
+5.0 contact
+6.0 small laptop respnsiveness
 
 */
 
@@ -25,6 +26,11 @@
 }
 
 /*0.1 global css*/
+body, button {
+   font-family: 'Caladea', serif !important;
+
+}
+
 .darkBG {
   background-color: #2a425e !important;
 }
@@ -36,13 +42,31 @@
 .lightBG {
   background-color: #e1c79b !important;
 }
+@media only screen and (max-width: 575px) {
+  .globalHeaderMobile {
+   min-height: 100vh !important;
+  /* max-height: 100% !important;*/
+   }
+}
+
+@media only screen and (max-width: 380px) {
+    .removeMobile {
+      display: none;
+    }
+
+     h1.smallerMobileH1  {
+      font-size: 30px !important;
+      margin-bottom: 5px !important;
+    }
+
+
+  }
 
 /*1.0 home page hero*/
 .heroBackgroundImage {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url('https://cdn.pixabay.com/photo/2017/06/21/15/08/horses-2427513_1280.jpg');
 }
 
 .heroBtn {
@@ -56,25 +80,26 @@
   color: #e1c79b;
 }
 
-/*scroll down*/
-.centerScroll {
-  
+@media only screen and (max-width: 575px) {
+  .heroBtn {
+  width: 250px;
+  }
+  .heroBtn:hover {
+  width: 250px;
+  }
 }
-.arrow-down {
-  width: 0; 
-  height: 0; 
-  border-radius: 10px;
-  border-left: 60px solid transparent;
-  border-right: 60px solid transparent;
-  text-align: center;
-  border-top: 60px solid #76FFCE;
-  margin-left: auto;
-  margin-right: auto;
-  position: absolute; 
-  bottom: 30px;
-  left: 48%;
+@media only screen and (max-width: 375px) {
+  .heroBtn {
+  width: 225px;
+  margin-top: -25px;
+  }
+  .heroBtn:hover {
+  width: 225px;
+  }
+  .mobileMarginBtn {
+      height: 60px
+    }
 }
-
 
 
 
@@ -103,6 +128,7 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+
 
 
 /*2.0 gradient BG and what we do section*/

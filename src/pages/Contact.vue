@@ -1,15 +1,15 @@
 <template>
   <div>
-    <div class="page-header page-header-small heroBackgroundImage" style="background-image: url('img/contact.png');"> 
+    <div class="page-header page-header-small heroBackgroundImage globalHeaderMobile" style="background-image: url('img/contact2.jpg');"> 
       <div class="content-center">
       <div class="container">
          <info-section class="info-hover"
               direction="vertical"
               type="primary"
               icon="now-ui-icons ui-2_chat-round">
-            <h1 class="info-title">Contact Us</h1>
+            <h1 class="info-title smallerMobileH1">Contact Us</h1>
             <hr style="background-color: white !important">
-           
+            <h4 style="color: white">Send us a message below.</h4>
          </info-section>
         <!-- <div class="row ">
           <div class="col-md-4 ml-auto mr-auto text-center ">
