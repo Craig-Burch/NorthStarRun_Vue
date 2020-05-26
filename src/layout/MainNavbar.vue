@@ -5,6 +5,7 @@
     :transparent="transparent"
     :color-on-scroll="colorOnScroll"
     menu-classes="ml-auto"
+    class="navBG"
   >
     <template slot-scope="{ toggle, isToggled }">
       <router-link v-popover:popover1 class="navbar-brand" to="/">
@@ -24,75 +25,62 @@
 
       </el-popover>
     </template>
-    <template slot="navbar-menu">
-
-      <!-- <li class="nav-item">
-        <a
-          class="nav-link"
-          href="https://www.creative-tim.com/product/vue-now-ui-kit"
-          target="_blank"
-        >
-          <i class="now-ui-icons arrows-1_cloud-download-93"></i>
-          <p>Download</p>
-        </a>
-      </li> -->
+    <template slot="navbar-menu" id="navbarWrapper">
       <li class="nav-item">
         <a class="nav-link">
-          <router-link to="/">
+          <nav-link to="/">
             <i style="font-size: 17px;" class="now-ui-icons shopping_shop"></i> 
+            <br class="md-screens-br">
             <p class="navbarText">Home</p>
-          </router-link>
+          </nav-link>
         </a>
       </li>
       <li class="nav-item">
         <a class="nav-link">
-          <router-link to="/About-Us">
+          <nav-link to="/About-Us">
             <i style="font-size: 17px;" class="now-ui-icons emoticons_satisfied"></i> 
+            <br class="md-screens-br">
             <p class="navbarText">About Us</p>
-          </router-link>
+          </nav-link>
         </a>
       </li>
        <li class="nav-item">
         <a class="nav-link">
-          <router-link to="/FAQ">
+          <nav-link to="/FAQ">
             <i style="font-size: 17px;" class="now-ui-icons users_circle-08"></i> 
+            <br class="md-screens-br">
             <p class="navbarText">FAQ</p>
-          </router-link>
+          </nav-link>
         </a>
       </li>
       <li class="nav-item">
         <a class="nav-link">
-          <router-link to="/Pricing">
+          <nav-link to="/Pricing">
             <i style="font-size: 17px;" class="now-ui-icons business_money-coins"></i> 
+            <br class="md-screens-br">
             <p class="navbarText">Pricing</p>
-          </router-link>
+          </nav-link>
         </a>
       </li>
       <li class="nav-item">
         <a class="nav-link">
-          <router-link to="/Contact">
+          <nav-link to="/Contact">
             <i style="font-size: 17px;" class="now-ui-icons ui-2_chat-round"></i>
+            <br class="md-screens-br">
             <p class="navbarText">Contact Us</p>
-          </router-link>
+          </nav-link>
         </a>
       </li>
       <li class="nav-item">
         <a class="nav-link">
-          <router-link to="/Gallery">
+          <nav-link to="/Gallery">
             <i style="font-size: 17px;" class="now-ui-icons media-1_album"></i>
+            <br class="md-screens-br">
             <p class="navbarText">Gallery</p>
-          </router-link>
+          </nav-link>
         </a>
       </li>  
-     <!--  <li class="nav-item">
-        <a class="nav-link btn btn-neutral darkColor">
-          <router-link to="/Contact">
-            <i style="color: #2a425e; " class="now-ui-icons ui-2_chat-round mr-1"></i>
-            <p><b>Contact Us</b></p>
-          </router-link>
-        </a>
-      </li> -->
-      <li class="nav-item">
+      <li class="nav-item socialIcons">
         <a
           class="nav-link"
           rel="tooltip"
@@ -101,11 +89,13 @@
           href=""
           target="_blank"
         >
-          <i class="fab fa-facebook-square"></i>
-          <p class="d-lg-none d-xl-none">Facebook</p>
+        <nav-link>
+          <i class="fab fa-facebook-square social-icons-size" ></i>
+          <p class="d-lg-none d-xl-none" style="color: white;">Facebook</p>
+        </nav-link>
         </a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item socialIcons">
         <a
           class="nav-link"
           rel="tooltip"
@@ -114,8 +104,10 @@
           href=""
           target="_blank"
         >
-          <i class="fab fa-instagram"></i>
-          <p class="d-lg-none d-xl-none">Instagram</p>
+        <nav-link>
+          <i class="fab fa-instagram social-icons-size" ></i>
+          <p class="d-lg-none d-xl-none" style="color: white;">Instagram</p>
+        </nav-link>
         </a>
       </li>
     </template>
@@ -137,6 +129,12 @@ export default {
     NavbarToggleButton,
     NavLink,
     [Popover.name]: Popover
+  },
+  data() {
+    return {
+    }
+  },
+  methods: {
   }
 };
 </script>
@@ -146,21 +144,91 @@ export default {
 *:focus {
   outline:none !important
 }
-.navbarText {
-  color: white; 
-  font-size: 14px;
-}
-/*respnsiveness*/
-.navbar-logo-resposive {
-  height:97px !important;
+
+li.nav-item {
+margin: 0px !important;
+/*text-align: left !important;*/
+padding: 0px !important;
+font-size: 
 }
 
+a.nav-link {
+  float: left;
+  padding: 0px 0px !important;
+}
+
+
+.navbarText {
+  color: white;
+}
+
+.dropdown-item:hover {
+  background-color: transparent !important; 
+
+}
+.navbar-logo-resposive {
+  height:85px !important;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+    color: white;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.navbar .navbar-nav .nav-link:not(.btn) i.now-ui-icons {
+    top: 4px;
+    /*font-size: 1.5em !important;*/
+    color: white !important;
+}
+
+li.nav-item.socialIcons {
+  padding: 3px !important;
+}
+
+i.social-icons-size {
+  font-size: 25px !important;
+}
+.md-screens-br {
+  display:none;
+}
 @media only screen and (max-width: 1200px) {
   .navbar-logo-resposive {
   height:70px !important;
 
   }
+  .md-screens-br {
+    display: block
+  }
 }
+@media only screen and (max-width: 989px) {
+  .navbar-logo-resposive {
+    height:85px !important;
+
+  }
+  a.nav-link {
+    width: 140px;
+    padding-left: -5px !important;
+  }
+  .md-screens-br {
+    display: none
+  }
+  .navbarText {
+    margin-left:5px; 
+ }
+ i.social-icons-size {
+  font-size: 20px !important;
+  margin-left: -4px;
+}
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar-logo-resposive {
+  height:55px !important;
+
+  }
+}
+
 
 
 </style>

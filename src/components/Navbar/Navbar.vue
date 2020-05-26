@@ -22,7 +22,8 @@
         id="navigation"
       >
         <slot name="before-menu"></slot>
-        <ul class="navbar-nav" :class="menuClasses">
+        <!-- <ul style="background-color: #2a425e !important" class="navbar-nav" :class="menuClasses"> -->
+        <ul style="" class="navbar-nav" :class="menuClasses">
           <slot name="navbar-menu" v-bind="slotData"></slot>
         </ul>
         <slot name="after-menu"></slot>
@@ -183,4 +184,13 @@ export default {
   }
 };
 </script>
-<style></style>
+<style>
+  @media screen and (max-width: 991px) { 
+  /*  .sidebar-collapse .navbar-collapse {
+    width: 180px !important
+  }*/
+.sidebar-collapse .navbar-collapse:before {
+    background: #2a425e !important;
+  }
+}
+</style>

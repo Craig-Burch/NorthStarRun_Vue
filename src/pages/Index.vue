@@ -38,59 +38,22 @@
       <div ></div>
       </div>
 
-     <!-- orginal slide -->
-      <!-- <div id="slides" class="carousel slide" data-ride="carousel">
-        <ul class="carousel-indicators">
-          <li data-target="#slides" data-slide-to="0" class="active"></li>
-          <li data-target="#slides" data-slide-to="1"></li>
-          <li data-target="#slides" data-slide-to="2"></li>
-        </ul>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="https://cdn.pixabay.com/photo/2017/06/21/15/08/horses-2427513_1280.jpg" alt="NSR" width="1100" height="500">
-            <div class="carousel-caption">
-              <h3>Los Angeles</h3>
-              <p>We had such a great time in LA!</p>
-            </div>   
-          </div>
-          <div class="carousel-item">
-            <img src="https://cdn.pixabay.com/photo/2020/04/07/14/09/obertraun-5013491_1280.jpg" alt="NSR" width="1100" height="500">
-            <div class="carousel-caption">
-              <h3>Chicago</h3>
-              <p>Thank you, Chicago!</p>
-            </div>   
-          </div>
-          <div class="carousel-item">
-            <img src="https://cdn.pixabay.com/photo/2015/05/23/16/59/homestead-780767_1280.jpg" alt="NSR" width="1100" height="500">
-            <div class="carousel-caption">
-              <h3>New York</h3>
-              <p>We love the Big Apple!</p>
-            </div>   
-          </div>
-         </div>
-          <a class="carousel-control-prev" href="#slides" data-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-          </a>
-          <a class="carousel-control-next" href="#slides" data-slide="next">
-            <span class="carousel-control-next-icon"></span>
-          </a>
-      </div> -->
-
-
-
     </div>
     <div class="section section-about-us" id="">
       <div class="container">
-        <!-- <div class="row">
+         <div class="row">
           <div class="col-md-8 ml-auto mr-auto text-center">
-            <h2 class="title">Our Mission</h2>
+            <h2 class="title"> Are You Considering Retirement For Your Horse?</h2>
             <p class="">
-              In 2017, I retired my Thoroughbred, Ki, to a retirement farm in Kentucky.  I anguished over that decision.  I knew it was the right decision, when I saw him gallop across the pasture and play in the pond with his herd mates.  To see Ki just “being a horse” in a peaceful, natural herd environment makes me so happy and I know it’s what he deserves.  Let North Star Run welcome your horse to retirement. 
-              <br><br>
-              Ki isn’t really that old, but he has health issues that make him un-rideable. He did an amazing job taking care of me over the years.  I wanted to give back to him in the most loving way. Whether it be old age, injury or just a reprieve from high boarding costs, consider NSR a selfless answer to a lease on a new life.
+             In 2017, I retired my Thoroughbred, Ki, to a retirement farm in Kentucky. I
+               anguished over that decision. I knew it was the right decision, when I saw him
+               gallop across the pasture and play in the pond with his herd mates. To see Ki just
+               “being a horse” in a peaceful, natural herd environment makes me so happy and I
+               know it’s what he deserves. Let North Star Run welcome your horse to
+               retirement. 
             </p>
           </div>
-        </div> -->
+        </div> 
         <div class="separator separator-primary"></div>
         <div class="section-story-overview">
           <div class="row">
@@ -120,18 +83,7 @@
                 class="image-container image-right"
                 style="background-image: url('https://cdn.pixabay.com/photo/2016/10/17/11/00/iceland-1747368_1280.jpg')"
               ></div>
-              <h3>
-                Are you considering retirement for your horse?
-              </h3>
-              <p>
-               In 2017, I retired my Thoroughbred, Ki, to a retirement farm in Kentucky. I
-               anguished over that decision. I knew it was the right decision, when I saw him
-               gallop across the pasture and play in the pond with his herd mates. To see Ki just
-               “being a horse” in a peaceful, natural herd environment makes me so happy and I
-               know it’s what he deserves. Let North Star Run welcome your horse to
-               retirement. 
 
-              </p>
               <br>
                <p>
                 Considering Retirement Living for your horse?  Wondering if it’s the right choice for your equine
@@ -152,7 +104,7 @@
       </div>
     </div>
 
-    <div class="section" id="carousel"  style="background-size: cover; background-image: url('https://cdn.pixabay.com/photo/2014/01/17/19/01/tree-247122_1280.jpg')">
+    <div class="section smallMobile" id="carousel"  style="background-size: cover; background-image: url('https://cdn.pixabay.com/photo/2014/01/17/19/01/tree-247122_1280.jpg')">
     <div class="container">
       <div class="title">
         <h4></h4>
@@ -269,27 +221,53 @@ export default {
     color: white !important;
     border: 1px solid white;
   }
-  .carousel-height {
-    height: 600px;
+ .carousel-height {
+    height: 600px !important;
   }
+  .el-carousel__container {
+    height: 600px !important;
+  }
+  
   @media only screen and (max-width: 989px) {
   .carousel-height {
-    height: 350px;
+    height: 400px !important;
+   }
+   .el-carousel__container {
+    height: 400px !important;
+   /* object-fit: contain !important;*/
+  }
+  .el-carousel__container img {
+    height: 400px !important;
+    object-fit: cover !important;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+ }
+ @media only screen and (max-width: 600px) {
+  .carousel-height {
+    height: 400px !important;
+   }
+   .el-carousel__container img{
+    height: 300px !important;
+  }
+ }
+
+ @media only screen and (max-width: 480px) {
+  .carousel-height {
+    height: 400px !important;
+   }
+   .el-carousel__container img{
+    height: 300px !important;
+  }
+ }
+
+ @media only screen and (max-width: 375px) {
+  .smallMobile {
+    display: none;
    }
  }
-  .carousel-inner img {
-    width: 100%;
-    height: 75vh;
-    object-fit: cover;
-  }
-
-  @media only screen and (max-width: 989px) {
-  .carousel-inner img {
-  height: 100vh;
-  border: 1px solid red;
-
-  }
-}
 
 
 </style>

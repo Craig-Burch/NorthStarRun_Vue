@@ -45,11 +45,10 @@ body, button {
 @media only screen and (max-width: 575px) {
   .globalHeaderMobile {
    min-height: 100vh !important;
-  /* max-height: 100% !important;*/
    }
 }
 
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 480px) {
     .removeMobile {
       display: none;
     }
@@ -88,7 +87,7 @@ body, button {
   width: 250px;
   }
 }
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 480px) {
   .heroBtn {
   width: 225px;
   margin-top: -25px;
