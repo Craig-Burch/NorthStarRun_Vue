@@ -9,13 +9,6 @@ import Pricing from './pages/Pricing.vue';
 import MainNavbar from './layout/MainNavbar.vue';
 import MainFooter from './layout/MainFooter.vue';
 
-// Home y
-// About Our Farm y
-// About Us / About Our Team  (might be integerated with "Our Farm")
-// Our Services y
-// Gallery y
-// QandA 
-// Contact Us (maybe use login page)
 
 Vue.use(Router);
 

@@ -1,14 +1,13 @@
 <template>
   <div class="lightBG">
-   <div class="page-header page-header-small heroGalleryBackgroundImage globalHeaderMobile" style="background-image: url('img/Light2.jpg');"> 
+   <div class="page-header page-header-small heroGalleryBackgroundImage globalHeaderMobile" style="background-image: url('img/gallery.jpg');"> 
     <div class="container mt-5">
       <div class="row d-flex justify-content-left mt-5 pt-5">
         <div class="col-md-6 col-sm-12 align-self-center" style="text-align: left">
           <h1 class="smallerMobileH1">Check Out Our Farm</h1>
            <hr style="background-color: white !important">
-          <h3>We take pride in our services and our ability to maintain a healthy enviornment for your horse.</h3>
+           <h3>We take pride in our services and our ability to maintain a healthy environment for your horse.</h3>
         </div>
-
       </div>
     </div>
   </div>
@@ -51,10 +50,10 @@ export default {
        images: [
           'https://cdn.pixabay.com/photo/2016/02/15/13/26/horse-1201143_1280.jpg',
           'https://cdn.pixabay.com/photo/2017/01/16/19/17/horses-1984977_1280.jpg',
-          'https://cdn.pixabay.com/photo/2016/10/17/11/00/iceland-1747368_1280.jpg',
+          'https://cdn.pixabay.com/photo/2016/01/19/18/00/horses-1150017_1280.jpg',
           'https://cdn.pixabay.com/photo/2017/08/02/15/15/horse-2572051_1280.jpg',
           'https://cdn.pixabay.com/photo/2016/05/25/13/55/horses-1414889_1280.jpg',
-          'https://cdn.pixabay.com/photo/2012/10/06/22/18/horse-60153_1280.jpg',
+          'https://cdn.pixabay.com/photo/2018/10/14/20/16/horses-3747374_1280.jpg',
           'https://cdn.pixabay.com/photo/2013/10/17/20/59/horse-197199_1280.jpg',
           'https://cdn.pixabay.com/photo/2019/10/23/16/23/horse-4572080_1280.jpg',
           'https://cdn.pixabay.com/photo/2015/08/24/19/55/horse-905534_1280.jpg',
@@ -68,7 +67,7 @@ export default {
     }
   },
   created() {
-    console.log('fire');
+    //console.log('fire');
   }
 };
 </script>

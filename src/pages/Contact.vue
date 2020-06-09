@@ -9,25 +9,8 @@
               icon="now-ui-icons ui-2_chat-round">
             <h1 class="info-title smallerMobileH1">Contact Us</h1>
             <hr style="background-color: white !important">
-            <h4 style="color: white">Send us a message below.</h4>
+            <h3 style="color: white">Send us a message below.</h3>
          </info-section>
-        <!-- <div class="row ">
-          <div class="col-md-4 ml-auto mr-auto text-center ">
-            <i style="font-size: 35px; margin-bottom: 5px;" class="now-ui-icons tech_mobile darkColor contactIcons"></i>
-            <h3>Phone</h3>           
-            <h4 class="mt-below-icons"> Feel free to call us by clicking on the icon above and talk about your questions regarding our horse retirement farm.</h4>
-          </div>
-          <div class="col-md-4 ml-auto mr-auto text-center  ">
-            <i style="font-size: 35px; margin-bottom: 5px;" class="now-ui-icons ui-1_email-85 darkColor contactIcons"></i>
-            <h3>Email</h3> 
-             <h4 class="mt-below-icons">You can email us by clicking the icon above or filling out contact form below. We look forward to hearing from you!</h4>
-          </div>
-          <div class="col-md-4 ml-auto mr-auto text-center  ">
-            <i style="font-size: 35px; margin-bottom: 5px;" class="now-ui-icons media-1_camera-compact darkColor contactIcons"></i>
-            <h3>Instargram</h3> 
-             <h4 class="mt-below-icons"> Follow us on our Instagram to keep up with the news surrounding our business. Thank you for your interest!</h4>
-          </div>
-        </div> -->
         </div>
       </div>
 </div>
@@ -36,43 +19,45 @@
       <div class="container">
         <h2 class="title">Want to talk?</h2>
         <p class="description darkColor">Your inquiry is very important to us.</p>
+        <div class="contact">
+        <form @submit.prevent="handleSubmit" enctype="multipart/form-data">
         <div class="row">
           <div class="col-lg-6 text-center ml-auto mr-auto col-md-8">
             <fg-input
               class="input-lg"
-              placeholder="First Name..."
-              v-model="form.firstName"
+              placeholder="Your Name.."
+              name="name"
+              v-model="data.name"
               addon-left-icon="now-ui-icons users_circle-08"
             >
             </fg-input>
             <fg-input
               class="input-lg"
-              placeholder="Email Here..."
-              v-model="form.email"
+              placeholder="Your Email.."
+              name="email"
+              type="email"
+              v-model="data.email"
               addon-left-icon="now-ui-icons ui-1_email-85"
             >
             </fg-input>
             <div class="textarea-container">
               <textarea
                 class="form-control"
-                name="name"
                 rows="4"
                 cols="80"
-                v-model="form.message"
-                placeholder="Type a message..."
+                name="comment" 
+                v-model="data.comment"
+                placeholder="Please let us know about your specific needs.."
               ></textarea>
             </div>
             <div class="send-button">
-              <n-button class ="darkBG" round block size="lg"
-                >Send Message</n-button
-              >
+               <button type="submit" class="darkBG btn" style="width: 150px; font-size: 20px">Submit</button>
             </div>
           </div>
         </div>
+        </form>
+        </div>
       </div>
-
-
-
     </div>
 
 
@@ -81,6 +66,7 @@
 <script>
 import { Button, FormGroupInput } from '@/components';
 import { Carousel, CarouselItem } from 'element-ui';
+import axios from "axios";
 export default {
 
   components: {
@@ -91,29 +77,71 @@ export default {
   },
   data() {
     return {
-      form: {
-        firstName: '',
-        email: '',
-        message: ''
-      }
+      data: []
     };
+  },
+  methods: {
+     handleSubmit () {
+      let formValues = [];
+        const inputs = document.querySelectorAll(".contact input, textarea ");
+          for (let input of inputs) {
+            let name = input.name;
+            let value = input.value;
+            formValues.push({ [name]: value });
+          }
+          formValues = Object.assign({}, ...formValues);
+          this.data = formValues;
+          if (formValues.name === "") {
+            alert('Name is Required. Please fix.');
+          } else if (formValues.email === "") {
+              alert('Email is Required. Please fix.');
+          } else if (formValues.comment === "") {
+              alert('Please tell us about your inquiry in the comment section. Thank you.');
+          }
+          else {
+            axios 
+            .post('http://northstarcontact-env.eba-vptdb8cr.us-east-1.elasticbeanstalk.com/mailer', formValues)
+            .then(response => {       
+              console.log(response);     
+            })
+            .catch(error => {
+              console.log(error);
+            });
+            alert("Thank you, we will contact you as soon as possible! Have a wonderful day!");
+            this.$router.push('/')
+          } 
+      }
   }
 };
 </script>
 <style>
-  .carousel-inner img {
-    width: 100%;
-    height: 75vh;
-    object-fit: cover;
-  }
+.carousel-inner img {
+  width: 100%;
+  height: 75vh;
+  object-fit: cover;
+}
 
-  .contactIcons {
-    background-color: white; 
-    border-radius: 40px; 
-    padding: 20px;
-  }
+.contactIcons {
+  background-color: white; 
+  border-radius: 40px; 
+  padding: 20px;
+}
 
- .mt-below-icons {
+.mt-below-icons {
   margin-top: -20px;
- }
+}
+
+i.input-group-text  {
+  border: 1px solid #2a425e !important;
+  border-right: none !important;
+}
+
+input.form-control {
+  border: 1px solid #2a425e !important;
+  border-left: none !important;
+}
+
+textarea.form-control, .el-date-picker .el-input textarea.el-input__inner, .form-group textarea.el-input__inner {
+  border-bottom: 1px solid #2a425e !important;
+}
 </style>

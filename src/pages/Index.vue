@@ -9,13 +9,13 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-md-6 ml-auto mr-auto text-center">
+          <div class="col-md-6 ml-auto mr-auto text-center" id="scrollDown">
             <h1 class="smallerMobileH1">Welcome To <br> North Star Run</h1>
           </div>
         </div>
         <div class="row ml-auto mr-auto"> 
            <div class="col-md-12 ">
-            <h3>Statesville, NC</h3>
+            <h3 class="stateText">Statesville, NC</h3> 
           </div>
         </div>
         <div class="row ml-auto mr-auto" style="margin-top: -10px;">       
@@ -26,7 +26,7 @@
               </h4>
            </a>
           </div>
-          <div class="col-md-6 col-sm-12 mobileMarginBtn" id="scrollDown">
+          <div class="col-md-6 col-sm-12 mobileMarginBtn" >
             <router-link to="/About-Us">
               <h4>
                 <n-button class="darkBG text-center heroBtn" >About Us</n-button>
@@ -45,12 +45,11 @@
           <div class="col-md-8 ml-auto mr-auto text-center">
             <h2 class="title"> Are You Considering Retirement For Your Horse?</h2>
             <p class="">
-             In 2017, I retired my Thoroughbred, Ki, to a retirement farm in Kentucky. I
-               anguished over that decision. I knew it was the right decision, when I saw him
-               gallop across the pasture and play in the pond with his herd mates. To see Ki just
-               “being a horse” in a peaceful, natural herd environment makes me so happy and I
-               know it’s what he deserves. Let North Star Run welcome your horse to
-               retirement. 
+                Considering Retirement Living for your horse?  Wondering if it’s the right choice for your equine
+                partner?  It’s a difficult decision to make. I know, I’ve been there. In 2017 I retired my horse Ki to a
+                retirement farm. I anguished over that decision, but I knew it was the right one when I saw Ki just “being
+                a horse” in a peaceful, natural herd environment. He’s thriving and happy and I know that’s what he
+                deserves.
             </p>
           </div>
         </div> 
@@ -68,7 +67,7 @@
                   We do our very best to find your horse the herd mates that maximize safety, comfort and health."
                   <br />
                   <br />
-                  <small>-Jennifer Burch</small>
+                  <small>-Jenni Burch</small>
                 </p>
               </div>
               <!-- Second image on the left side of the article -->
@@ -83,14 +82,20 @@
                 class="image-container image-right"
                 style="background-image: url('https://cdn.pixabay.com/photo/2016/10/17/11/00/iceland-1747368_1280.jpg')"
               ></div>
-
+                 
               <br>
                <p>
-                Considering Retirement Living for your horse?  Wondering if it’s the right choice for your equine
-                partner?  It’s a difficult decision to make. I know, I’ve been there. In 2017 I retired my horse Ki to a
-                retirement farm. I anguished over that decision, but I knew it was the right one when I see Ki just “being
-                a horse” in a peaceful, natural herd environment. He’s thriving and happy and I know that’s what he
-                deserves.
+                Maybe your horse is older, and he’s done an amazing job taking care of you over the years.  Now you
+                want to give back to him in the most loving way.
+                <br><br>
+
+                Or, maybe your horse in younger but an injury is keeping him from doing his job.
+                <br><br>
+
+                Or, perhaps you just need a reprieve from the high boarding costs in many parts of our country.
+                <br><br>
+    
+                Or, maybe your horse just needs some much needed down time to refresh and relax.
               </p>
               <br>
               <p>
@@ -135,56 +140,56 @@
       </div>
     </div>
   </div>
-
-
- 
     <div class="section section-contact-us text-center">
       <div class="container">
         <h2 class="title">Want to talk?</h2>
-        <p class="description">Your inquiry is very important to us.</p>
+        <p class="description darkColor">Your inquiry is very important to us.</p>
+        <div class="contact">
+        <form @submit.prevent="handleSubmit" enctype="multipart/form-data">
         <div class="row">
           <div class="col-lg-6 text-center ml-auto mr-auto col-md-8">
             <fg-input
               class="input-lg"
-              placeholder="First Name..."
-              v-model="form.firstName"
+              placeholder="Your Name.."
+              name="name"
+              v-model="data.name"
               addon-left-icon="now-ui-icons users_circle-08"
             >
             </fg-input>
             <fg-input
               class="input-lg"
-              placeholder="Email Here..."
-              v-model="form.email"
+              placeholder="Your Email.."
+              name="email"
+              type="email"
+              v-model="data.email"
               addon-left-icon="now-ui-icons ui-1_email-85"
             >
             </fg-input>
             <div class="textarea-container">
               <textarea
                 class="form-control"
-                name="name"
                 rows="4"
                 cols="80"
-                v-model="form.message"
-                placeholder="Type a message..."
+                name="comment" 
+                v-model="data.comment"
+                placeholder="Please let us know about your specific needs.."
               ></textarea>
             </div>
             <div class="send-button">
-              <n-button class ="darkBG" round block size="lg"
-                >Send Message</n-button
-              >
+               <button type="submit" class="darkBG btn" style="width: 150px; font-size: 20px">Submit</button>
             </div>
           </div>
         </div>
+        </form>
+        </div>
       </div>
-
-
-
     </div>
   </div>
 </template>
 <script>
 import { Button, FormGroupInput } from '@/components';
 import { Carousel, CarouselItem } from 'element-ui';
+import axios from "axios";
 export default {
   name: 'landing',
   bodyClass: 'landing-page',
@@ -196,19 +201,69 @@ export default {
   },
   data() {
     return {
-      form: {
-        firstName: '',
-        email: '',
-        message: ''
-      }
+      data: []
     };
+  },
+  methods: {
+     handleSubmit () {
+      let formValues = [];
+        const inputs = document.querySelectorAll(".contact input, textarea ");
+          for (let input of inputs) {
+            let name = input.name;
+            let value = input.value;
+            formValues.push({ [name]: value });
+          }
+          formValues = Object.assign({}, ...formValues);
+          this.data = formValues;
+          if (formValues.name === "") {
+            alert('Name is Required. Please fix.');
+          } else if (formValues.email === "") {
+              alert('Email is Required. Please fix.');
+          } else if (formValues.comment === "") {
+              alert('Please tell us about your inquiry in the comment section. Thank you.');
+          }
+          else {
+            axios 
+            .post('http://northstarcontact-env.eba-vptdb8cr.us-east-1.elasticbeanstalk.com/mailer', formValues)
+            .then(response => {       
+              console.log(response);     
+            })
+            .catch(error => {
+              console.log(error);
+            });
+            alert("Thank you, we will contact you as soon as possible! Have a wonderful day!");
+            location.reload();
+          } 
+      }
   }
 };
 </script>
 <style>
+  .stateText {
+    font-size: 30px; 
+  }
+
+  /*contact form*/
+i.input-group-text  {
+  border: 1px solid #2a425e !important;
+  border-right: none !important;
+}
+
+input.form-control {
+  border: 1px solid #2a425e !important;
+  border-left: none !important;
+}
+
+textarea.form-control, .el-date-picker .el-input textarea.el-input__inner, .form-group textarea.el-input__inner {
+  border-bottom: 1px solid #2a425e !important;
+}
+
   @media only screen and (max-width: 575px) {
    .heroLogo {
     width: 175px;
+   }
+   .stateText {
+    font-size: 20px; 
    }
   }
   @media only screen and (max-width: 380px) {

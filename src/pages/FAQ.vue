@@ -1,4 +1,3 @@
-<!-- this code was moved to index -->
 <template>
   <div>
     <div class="page-header page-header-small heroBackgroundImage globalHeaderMobile" style="background-image: url('img/faqHorse2.jpg')"> 
@@ -11,13 +10,11 @@
               icon="now-ui-icons ui-2_chat-round">
             <h1 class="info-title smallerMobileH1">Questions and Answers</h1>
             <hr style="background-color: white !important">
-            <h4 style="color: white">Common questions answered for your convenience.</h4>
+            <h3>Common questions answered for your convenience.</h3>
          </info-section>
         </div>
       </div>
     </div>
-
-
     <div class="section section-about-us">
       <div class="container">
         <info-section class="info-hover "
@@ -37,7 +34,7 @@
               icon="now-ui-icons ui-2_chat-round">
            <h3 class="title" style="margin-bottom: 10px !important;">What type of fencing is used on the farm for the horses? </h3>
            <ul>
-             <li>  White 3 rail electric tape with Tposts and solar panel chargers. All Tposts tops are protected with rubber caps.
+             <li>  White 3 rail electric tape with T-Posts and solar panel chargers. All T-Posts tops are protected with rubber caps.
              </li>
            </ul>
         </info-section>
@@ -60,7 +57,7 @@
            <h3 class="title" style="margin-bottom: 10px !important;">What Vet do you use? </h3>
            <ul>
             <li>  We have several Vets within a ½ hour driving distance. <a target="_blank" href="http://www.statesvilleequineclinic.com/">Statesville Equine Clinic</a>  
-             and <a target="_blank" href="https://nianimalhospital.com/">Bradford Animal Hospital</a> and both just minutes away from the farm. (add links)
+             and <a target="_blank" href="https://nianimalhospital.com/">Bradford Animal Hospital</a> and both just minutes away from the farm. 
             </li>
           </ul>
         </info-section>
@@ -82,7 +79,7 @@
               icon="now-ui-icons ui-2_chat-round">
            <h3 class="title" style="margin-bottom: 10px !important;">What is the weather like in Statesville?  </h3>
            <ul>
-           <li> You can check weather.com’s info <a target="_blank" href="https://www.weather-us.com/en/north-carolina-usa/charlotte-climate">HERE.</a>
+           <li> You can check weather.com info <a target="_blank" href="https://www.weather-us.com/en/north-carolina-usa/charlotte-climate">HERE.</a>
               
             </li>
             <li> 
@@ -135,7 +132,7 @@
               Cremation is an option through a local,  <a target="_blank" href="https://agapepetservices.com/north-carolina/">reputable pet service</a>. If you choose cremation, they will compassionately and discretely retrieve your horse.
             </li>
             <li >  
-              You may be able to donate your horse to UNC Chapel Hill Vet program. Your donation can help countless students learn more about the way our magnificent equine partners are created.
+              You may be able to donate your horse to NC State veterinary program. Your donation can help countless students learn more about the way our magnificent equine partners are created.
             </li>
           </ol>
         </info-section>
@@ -151,8 +148,6 @@
     </div>
   </div>
 </template>
-
-
 <script>
 import { Button, FormGroupInput } from '@/components';
 export default {

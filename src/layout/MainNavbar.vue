@@ -29,8 +29,8 @@
       <li class="nav-item">
         <a class="nav-link">
           <nav-link to="/">
-            <i style="font-size: 17px;" class="now-ui-icons shopping_shop"></i> 
-            <br class="md-screens-br">
+             <i style="font-size: 17px;" class="now-ui-icons shopping_shop desktopDisplayNoIcons"></i>  
+           <!--  <br class="md-screens-br"> -->
             <p class="navbarText">Home</p>
           </nav-link>
         </a>
@@ -38,8 +38,8 @@
       <li class="nav-item">
         <a class="nav-link">
           <nav-link to="/About-Us">
-            <i style="font-size: 17px;" class="now-ui-icons emoticons_satisfied"></i> 
-            <br class="md-screens-br">
+            <i style="font-size: 17px;" class="now-ui-icons emoticons_satisfied desktopDisplayNoIcons"></i>  
+            <!-- <br class="md-screens-br"> -->
             <p class="navbarText">About Us</p>
           </nav-link>
         </a>
@@ -47,8 +47,8 @@
        <li class="nav-item">
         <a class="nav-link">
           <nav-link to="/FAQ">
-            <i style="font-size: 17px;" class="now-ui-icons users_circle-08"></i> 
-            <br class="md-screens-br">
+           <i style="font-size: 17px;" class="now-ui-icons users_circle-08 desktopDisplayNoIcons"></i> 
+            <!-- <br class="md-screens-br"> -->
             <p class="navbarText">FAQ</p>
           </nav-link>
         </a>
@@ -56,8 +56,8 @@
       <li class="nav-item">
         <a class="nav-link">
           <nav-link to="/Pricing">
-            <i style="font-size: 17px;" class="now-ui-icons business_money-coins"></i> 
-            <br class="md-screens-br">
+            <i style="font-size: 17px;" class="now-ui-icons business_money-coins desktopDisplayNoIcons"></i> 
+            <!-- <br class="md-screens-br"> -->
             <p class="navbarText">Pricing</p>
           </nav-link>
         </a>
@@ -65,8 +65,8 @@
       <li class="nav-item">
         <a class="nav-link">
           <nav-link to="/Contact">
-            <i style="font-size: 17px;" class="now-ui-icons ui-2_chat-round"></i>
-            <br class="md-screens-br">
+            <i style="font-size: 17px;" class="now-ui-icons ui-2_chat-round desktopDisplayNoIcons"></i> 
+            <!-- <br class="md-screens-br"> -->
             <p class="navbarText">Contact Us</p>
           </nav-link>
         </a>
@@ -74,8 +74,8 @@
       <li class="nav-item">
         <a class="nav-link">
           <nav-link to="/Gallery">
-            <i style="font-size: 17px;" class="now-ui-icons media-1_album"></i>
-            <br class="md-screens-br">
+             <i style="font-size: 17px;" class="now-ui-icons media-1_album desktopDisplayNoIcons"></i> 
+            <!-- <br class="md-screens-br"> -->
             <p class="navbarText">Gallery</p>
           </nav-link>
         </a>
@@ -147,7 +147,6 @@ export default {
 
 li.nav-item {
 margin: 0px !important;
-/*text-align: left !important;*/
 padding: 0px !important;
 font-size: 
 }
@@ -160,20 +159,29 @@ a.nav-link {
 
 .navbarText {
   color: white;
+  padding-top: 10px;
+  font-size: 16px;
+}
+
+.desktopDisplayNoIcons {
+  display: none;
 }
 
 .dropdown-item:hover {
   background-color: transparent !important; 
 
 }
+  
 .navbar-logo-resposive {
-  height:85px !important;
+  height:80px !important;
+}
+
+.dropdown-item {
+    background-color: transparent !important;
 }
 
 .dropdown-item.active, .dropdown-item:active {
-    color: white;
-    text-decoration: none;
-    background-color: transparent;
+    background-color: transparent !important;
 }
 
 .navbar .navbar-nav .nav-link:not(.btn) i.now-ui-icons {
@@ -194,12 +202,23 @@ i.social-icons-size {
 }
 @media only screen and (max-width: 1200px) {
   .navbar-logo-resposive {
-  height:70px !important;
+  height:65px !important;
 
   }
   .md-screens-br {
     display: block
   }
+  .navbarText {
+    color: white;
+    padding-top: 10px;
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 1010px) {
+  .navbar-logo-resposive {
+  height:60px !important;
+  }
+
 }
 @media only screen and (max-width: 989px) {
   .navbar-logo-resposive {
@@ -215,6 +234,9 @@ i.social-icons-size {
   }
   .navbarText {
     margin-left:5px; 
+ }
+ .desktopDisplayNoIcons {
+  display: inline-block;
  }
  i.social-icons-size {
   font-size: 20px !important;

@@ -9,7 +9,7 @@
               icon="now-ui-icons ui-2_chat-round">
             <h1 class="info-title smallerMobileH1">Pricing</h1>
             <hr style="background-color: white !important">
-            <h4 style="color: white">Our bording fee to provide exceptional, quality, care for your horse is $350 per month.</h4>
+            <h3 style="color: white">Our boarding fee to provide exceptional, quality, care for your horse is <br>$350 per month.</h3>
            
          </info-section>
 

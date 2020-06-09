@@ -189,8 +189,14 @@ export default {
   /*  .sidebar-collapse .navbar-collapse {
     width: 180px !important
   }*/
-.sidebar-collapse .navbar-collapse:before {
+  .sidebar-collapse .navbar-collapse {
     background: #2a425e !important;
+    border-left: 1px solid #e1c79b !important;
   }
+ .sidebar-collapse .navbar-collapse:before {
+    background: #2a425e !important;
+   /* background-image: linear-gradient(to bottom, #2a425e 45%, #e1c79b 99%) !important;*/
+  }
+  
 }
 </style>
