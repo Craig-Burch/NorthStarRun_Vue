@@ -54,7 +54,7 @@
     <div class="section section-team text-center" >
       <div class="container">
         <h3 class="title" > Our Team </h3>
-         <p class="mb-5">
+         <p class="mb-5" style="width: 80%; margin-left: 10%">
           With decades of experience, our team has the tools to care for your horse with the knowledge and expertise needed to provide unmatched, quality care for your treasured companion. 
         </p>
         
@@ -71,7 +71,7 @@
                 <h4 class="title">Jenni and Todd Burch</h4>
                 <p class="category text-primary">Owners</p>
                 <p class="">
-                  Horses are Jenni's passion. She has been involved in the Equine Industry for the past 41 years in many capacities; trainer, riding instructor, competitor, boarding barn owner/manager, foaling manager, and horse owner. Both her and husband, Todd, are excited to take their collective knowledge of Horses and Finance into the retirement boarding industry.
+                  Horses are Jenni's passion. She has been involved in the Equine Industry for the past 41 years in many capacities; trainer, riding instructor, competitor, boarding barn owner/manager, foaling manager, and horse owner. Both Jenni and husband, Todd, are excited to take their collective knowledge of Horses and Finance into the retirement boarding industry.
                 </p>
               </div>
             </div>
@@ -86,7 +86,7 @@
                 <h4 class="title">Wendy and Gary Holland</h4>
                 <p class="category text-primary">Owners</p>
                 <p class="">
-                 Wendy grew up riding horses with Jenni and has always had a love for them. Really, she's always had a love for the farm life. Her and husband Gary, along with Gary’s family, own North Star Run's 160-acre farm. They live on the property and will be sharing in the day to day operation of NSR's retirement boarding facility.
+                 Wendy grew up riding horses with Jenni and has always had a love for them. Really, she's always had a love for the farm life. Wendy and husband Gary, along with Gary’s family, own North Star Run's 160-acre farm. They live on the property and will be sharing in the day to day operation of NSR's retirement boarding facility.
                 </p>
               </div>
             </div>

@@ -3,14 +3,9 @@
     <div class="page-header page-header-small heroBackgroundImage globalHeaderMobile" style="background-image: url('img/contact2.jpg');"> 
       <div class="content-center">
       <div class="container">
-         <info-section class="info-hover"
-              direction="vertical"
-              type="primary"
-              icon="now-ui-icons ui-2_chat-round">
             <h1 class="info-title smallerMobileH1">Contact Us</h1>
-            <hr style="background-color: white !important">
-            <h3 style="color: white">Send us a message below.</h3>
-         </info-section>
+            <hr style="background-color: white !important">             
+            <h3 style="color: white">We would love to hear from you, let us know what we can do.<br class="hideMobile"> Click <a href="tel:928-276-0475">Here </a> to call Jenni Burch or you may also fill out our contact form below. </h3>
         </div>
       </div>
 </div>
@@ -143,5 +138,10 @@ input.form-control {
 
 textarea.form-control, .el-date-picker .el-input textarea.el-input__inner, .form-group textarea.el-input__inner {
   border-bottom: 1px solid #2a425e !important;
+}
+@media only screen and (max-width: 767px) {
+.hideMobile {
+  display: none;
+ }
 }
 </style>

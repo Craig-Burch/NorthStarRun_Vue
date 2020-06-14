@@ -34,6 +34,9 @@ body, button {
 .lightBG {
   background-color: #e1c79b !important;
 }
+.lightColor {
+  color: #e1c79b !important;
+}
 @media only screen and (max-width: 575px) {
   .globalHeaderMobile {
    min-height: 100vh !important;

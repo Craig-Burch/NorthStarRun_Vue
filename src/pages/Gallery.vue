@@ -75,6 +75,12 @@ export default {
   a.close {
     color: white !important;
   }
+  a.next {
+    color: white !important;
+  }
+  a.prev {
+    color: white !important;
+  }
 
   .image {
     float: left;

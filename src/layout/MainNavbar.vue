@@ -144,22 +144,21 @@ export default {
 *:focus {
   outline:none !important
 }
-
-li.nav-item {
-margin: 0px !important;
-padding: 0px !important;
-font-size: 
+@media only screen and (min-width: 1200px) {
+  li.nav-item.socialIcons {
+    margin-top: -5px !important;
+  }
 }
-
 a.nav-link {
   float: left;
   padding: 0px 0px !important;
+  margin-top: 10px;
 }
 
 
 .navbarText {
   color: white;
-  padding-top: 10px;
+  padding-top: 5px;
   font-size: 16px;
 }
 
@@ -202,7 +201,7 @@ i.social-icons-size {
 }
 @media only screen and (max-width: 1200px) {
   .navbar-logo-resposive {
-  height:65px !important;
+  height:45px !important;
 
   }
   .md-screens-br {
@@ -214,12 +213,12 @@ i.social-icons-size {
     font-size: 13px;
   }
 }
-@media only screen and (max-width: 1010px) {
+/*@media only screen and (max-width: 1010px) {
   .navbar-logo-resposive {
   height:60px !important;
   }
 
-}
+}*/
 @media only screen and (max-width: 989px) {
   .navbar-logo-resposive {
     height:85px !important;

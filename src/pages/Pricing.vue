@@ -3,23 +3,17 @@
     <div class="page-header page-header-small heroBackgroundImage globalHeaderMobile" style="background-image: url('img/field22.jpg')">
       <div class="content-center">
       <div class="container">
-        <info-section class="info-hover"
-              direction="vertical"
-              type="primary"
-              icon="now-ui-icons ui-2_chat-round">
+   
             <h1 class="info-title smallerMobileH1">Pricing</h1>
-            <hr style="background-color: white !important">
+            <hr style="background-color: white !important"> 
             <h3 style="color: white">Our boarding fee to provide exceptional, quality, care for your horse is <br>$350 per month.</h3>
-           
-         </info-section>
-
       </div>
     </div>
     </div>
     <div class="section">
       <div class="container">
        
-        <h3 class="title">Our Services Includes:</h3>
+        <h3 class="title">Our Services Include:</h3>
         <ul>
           <li>Hay fed year round as needed </li>
           <li>Nutrina Pro Force Senior Feed for our retirees needing extra help keeping weight on</li>
@@ -28,10 +22,8 @@
           <li>Access to salt and mineral blocks</li>
           <li>Fly spray in the summer (provided by us) and we use fly masks as well (provided by you)</li>
           <li>Daily hands on inspection of each horse</li>
-          <li>TLC is of the utmost importance</li>
-          <li>Semi-annual / annual vaccination and dental work are the only extra costs.</li>
-          
-         
+          <li>Rotational Pasture Grazing</li>
+          <li>Semi-annual or annual vaccination and dental work are the only extra costs</li>    
         </ul>
         
       </div>

@@ -11,6 +11,7 @@
         <div class="row">
           <div class="col-md-6 ml-auto mr-auto text-center" id="scrollDown">
             <h1 class="smallerMobileH1">Welcome To <br> North Star Run</h1>
+            <h3 class="lightColor erlText">Equine Retirement Living</h3>
           </div>
         </div>
         <div class="row ml-auto mr-auto"> 
@@ -120,19 +121,19 @@
             <el-carousel-item>
               <img class="d-block" src="https://cdn.pixabay.com/photo/2017/01/16/19/17/horses-1984977_1280.jpg" alt="First slide" />
               <div class="carousel-caption d-none d-md-block">
-                <h5>Picture 1</h5>
+               <!--  <h5>Picture 1</h5> -->
               </div>
             </el-carousel-item>
             <el-carousel-item>
               <img class="d-block" src="https://cdn.pixabay.com/photo/2016/01/19/17/23/countryside-1149680_1280.jpg" alt="Second slide" />
               <div class="carousel-caption d-none d-md-block">
-                <h5>Picture 2</h5>
+               <!--  <h5>Picture 2</h5> -->
               </div>
             </el-carousel-item>
             <el-carousel-item>
               <img class="d-block" src="https://cdn.pixabay.com/photo/2014/08/26/15/15/country-lane-428039_1280.jpg" alt="Third slide" />
               <div class="carousel-caption d-none d-md-block">
-                <h5>Picture 3</h5>
+                <!-- <h5>Picture 3</h5> -->
               </div>
             </el-carousel-item>
           </el-carousel>
@@ -239,6 +240,15 @@ export default {
 };
 </script>
 <style>
+  @media only screen and (max-width: 1920px) {
+  .heroLogo {
+    width: 350px;
+   }
+ }
+  .erlText {
+    line-height: 10px;
+    font-size: 28px; 
+  }
   .stateText {
     font-size: 30px; 
   }
@@ -263,7 +273,8 @@ textarea.form-control, .el-date-picker .el-input textarea.el-input__inner, .form
     width: 175px;
    }
    .stateText {
-    font-size: 20px; 
+    font-size: 20px;
+    line-height: 10px; 
    }
   }
   @media only screen and (max-width: 380px) {
@@ -315,6 +326,10 @@ textarea.form-control, .el-date-picker .el-input textarea.el-input__inner, .form
    }
    .el-carousel__container img{
     height: 300px !important;
+  }
+  .erlText {
+    line-height: 10px;
+    font-size: 17.5px; 
   }
  }
 
